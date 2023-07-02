@@ -15,10 +15,6 @@ git checkout main
 ```
 git branch -d <BRANCH_NAME>
 ```
-**E325: ATTENTION Found a swap file by the name ".git/.COMMIT_EDITMSG.swp"** 
-```
-rm .git/.COMMIT_EDITMSG.swp
-```
 **get commit logs/ ids**
 ```
 git log
@@ -26,4 +22,8 @@ git log
 **revert changes**
 ```
 git revert <COMMIT_ID>
+```
+**E325: ATTENTION Found a swap file by the name ".git/.COMMIT_EDITMSG.swp"** 
+```
+rm .git/.COMMIT_EDITMSG.swp
 ```
