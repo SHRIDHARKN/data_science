@@ -1,13 +1,32 @@
 # _apache airflow_
 **install apache airflow**
 ```
-pip install "apache-airflow==2.6.2" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.6.2/constraints-no-providers-3.11.txt"
+curl 'https://airflow.apache.org/docs/apache-airflow/2.6.2/docker-compose.yaml' -o 'docker-compose.yaml'
 ```
-**initialise airflow db**
+**paste the following commands to make required directories**
 ```
-airflow db init
+mkdir dags
+mkdir logs
+mkdir plugins
 ```
-**create a airflow user**
+**_create a .dockerignore file and mention .git in it_**<br>
+_this is to ignore downloading large files and avoid running into endless docker image building process_<br>
+<br>
+**build the docker image**
 ```
-airflow users create  --username admin  --firstname <FRIST_NAME>  --lastname <LAST_NAME>  --role Admin --email None
+docker compose up airflow-init
+```
+**start airflow services**
+```
+docker compose up
+```
+**run the following command in new terminal to check health status of container services**
+```
+docker ps
+```
+**_open localhost:8080 to open airflow interface_**<br>
+<br>
+**stop airflow services**
+```
+docker compose down
 ```
