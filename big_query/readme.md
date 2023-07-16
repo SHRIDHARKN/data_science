@@ -8,7 +8,6 @@ WHERE channelGrouping IN ('Organic Search','Direct')
 ORDER BY totals.transactionRevenue DESC
 LIMIT 5
 ```
-<br>
 **conversion rate and average order value**<br>
 ```
 SELECT channelGrouping as channel,
