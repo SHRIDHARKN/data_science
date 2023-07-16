@@ -38,7 +38,7 @@ SELECT PARSE_DATE('%Y%m%d',date) as date_formatted
 FROM `bigquery-public-data.google_analytics_sample.ga_sessions_20170801`)
 ```
 **working with records**<br>
-```
+```SQL
 SELECT page.pagePath,isEntrance
 FROM 
 `bigquery-public-data.google_analytics_sample.ga_sessions_20170801`
