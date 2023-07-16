@@ -9,7 +9,7 @@ ORDER BY totals.transactionRevenue DESC
 LIMIT 5
 ```
 **conversion rate and average order value**<br>
-```
+```SQL
 SELECT channelGrouping as channel,
 SUM(totals.transactions)/SUM(totals.visits) as conversion_rate,
 SUM(totals.transactionRevenue)/SUM(totals.transactions) as aov
