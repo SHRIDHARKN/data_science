@@ -27,3 +27,13 @@ FROM `bigquery-public-data.google_analytics_sample.ga_sessions_20170801`
 WHERE channelGrouping IN ('Organic Search','Direct')
 GROUP BY channelGrouping
 ```
+**working with date time**<br>
+```SQL
+SELECT 
+date_formatted,
+EXTRACT(YEAR FROM date_formatted) as year,EXTRACT(MONTH FROM date_formatted) as month,
+EXTRACT(DAY FROM date_formatted) as day
+FROM (
+SELECT PARSE_DATE('%Y%m%d',date) as date_formatted
+FROM `bigquery-public-data.google_analytics_sample.ga_sessions_20170801`)
+```
