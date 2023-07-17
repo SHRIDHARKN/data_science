@@ -24,7 +24,7 @@ docker compose up
 ```
 docker ps
 ```
-*_open localhost:8080 to open airflow interface_*<br>
+*_open localhost:8080 to start airflow interface_*<br>
 <br>
 **stop airflow services**
 ```
