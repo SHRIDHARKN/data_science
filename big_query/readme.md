@@ -46,7 +46,7 @@ CROSS JOIN UNNEST(hits)
 ```
 **working with json**<br>
 *Example - ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/0aca945e-f9f2-405c-a5cb-c4c2e250f97d)<br>
-'work' column had data in json format. Unnest the column.*<br>
+'work' column has data in json format. Unnest the column.*<br>
 ```SQL
 with data_formatted as (
 SELECT name,place,userId,work from `<TABLE>`)
