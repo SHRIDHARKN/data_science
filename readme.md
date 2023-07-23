@@ -7,4 +7,4 @@
   [candidate_n_resume_tagging](https://github.com/SHRIDHARKN/data_science/tree/main/nlp/candidate_n_resume_tagging)<br>
 * deep_learning <br>
   image_search_engine<br>
-    [fashion_image_search](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/image_search_engine/extract_resnet50_features.ipynb)<br>
+    [fashion_image_search](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/image_search_engine)<br>
