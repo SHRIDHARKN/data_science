@@ -24,3 +24,7 @@ docker images
 ```
 docker ps
 ```
+## see all containers, including the ones that are not running
+```
+docker ps -a
+```
