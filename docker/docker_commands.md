@@ -11,12 +11,11 @@ COPY . /app
 # Run the Python script when the container launches
 CMD ["python", "app.py"]
 ```
-<br>
-# build docker image
+# build docker image <br>
 ```
 docker build -t simple-python-app .
 ```
-# list docker images
+# list docker images <br>
 ```
 docker images
 ```
