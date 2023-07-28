@@ -19,3 +19,7 @@ docker build -t simple-python-app .
 ```
 docker images
 ```
+# check the running docker containers
+```
+docker ps
+```
