@@ -28,3 +28,7 @@ docker ps
 ```
 docker ps -a
 ```
+## delete docker image
+```
+docker rm -f <CONTAINER_ID_OR_NAME>
+```
