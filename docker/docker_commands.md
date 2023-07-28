@@ -1,3 +1,4 @@
+## build docker file <br>
 ```
 # Use the official Python image as the base image
 FROM python:3
@@ -11,15 +12,15 @@ COPY . /app
 # Run the Python script when the container launches
 CMD ["python", "app.py"]
 ```
-# build docker image <br>
+## build docker image <br>
 ```
 docker build -t simple-python-app .
 ```
-# list docker images <br>
+## list docker images <br>
 ```
 docker images
 ```
-# check the running docker containers
+## check the running docker containers
 ```
 docker ps
 ```
