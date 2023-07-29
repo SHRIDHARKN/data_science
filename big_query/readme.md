@@ -61,6 +61,10 @@ FROM
 GROUP BY
   userId;
 ```
-
+**mode -- most frequent**
+```
+SELECT MODE() WITHIN GROUP(ORDER BY order_occurrences)
+FROM items_per_order
+```
 
 
