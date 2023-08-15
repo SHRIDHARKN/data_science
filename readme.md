@@ -1,8 +1,10 @@
 # data_science
 * nlp <br>
-  [candidate_n_resume_tagging](https://github.com/SHRIDHARKN/data_science/tree/main/nlp/candidate_n_resume_tagging)<br>
-* deep_learning <br>
-  image_search_engine<br>
+  [candidate-resume-tagging](https://github.com/SHRIDHARKN/data_science/tree/main/nlp/candidate_n_resume_tagging)<br>
+  [text-classification-BERT](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/bert/Text%20Classification%20Using%20BERT.ipynb)<br>
+  [BERT-embeddings-and-sklearn-classifiers](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/bert/Text_classification_using_BERT_embeddings_and_sklearn_classifiers.ipynb)<br>
+* deep-learning <br>
+  image-search-engine<br>
     [fashion_image_search](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/image_search_engine)<br>
 * [docker_commands](https://github.com/SHRIDHARKN/data_science/blob/main/docker/docker_commands.md)<br>
 * [conda_commands](https://github.com/SHRIDHARKN/data_science/blob/main/conda_envs.md)<br>
