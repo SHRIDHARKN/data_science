@@ -5,7 +5,7 @@
    * [BERT-embeddings-and-sklearn-classifiers](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/bert/Text_classification_using_BERT_embeddings_and_sklearn_classifiers.ipynb)<br>
 * **deep-learning** <br>
   - image-search-engine<br>
-    [fashion_image_search](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/image_search_engine)<br>
+     * [fashion_image_search](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/image_search_engine)<br>
 * [docker_commands](https://github.com/SHRIDHARKN/data_science/blob/main/docker/docker_commands.md)<br>
   - ml-apps - [boston-house-price](https://github.com/SHRIDHARKN/data_science/blob/main/docker/boston-hp-pred-app/project.md)
 * [conda_commands](https://github.com/SHRIDHARKN/data_science/blob/main/conda_envs.md)<br>
