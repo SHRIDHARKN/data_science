@@ -20,4 +20,4 @@ docker build -t simple-python-app .
 docker run -it simple-python-app
 ```
 ### prompted to enter the inputs:<br>
-![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/9f4f7a01-e74a-4644-9abf-7f55607cf1b9)
+![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/41484595-f051-4801-808e-b4066c02dd0b)
