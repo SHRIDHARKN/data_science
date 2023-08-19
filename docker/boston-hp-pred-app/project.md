@@ -1,4 +1,4 @@
-# let's build a simple ml app for predicting the boston house price 
+# let's build a simple ml app for boston house price prediction 
 ### create a app.py file and paste the following code:
 ```python
 import numpy as np
@@ -41,4 +41,6 @@ docker run -it boston-hp-pred-app
 ```
 ### enter the model inputs <br>
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/bac3a0da-2099-4a02-89ef-a59968167648)
+![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/5223d399-455a-410a-801f-5cefff9f048c)
+
 
