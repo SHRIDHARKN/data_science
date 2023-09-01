@@ -1,4 +1,4 @@
-# load the libs
+## load the libs
 ```
 from numpy import expand_dims
 from numpy import zeros
@@ -20,7 +20,7 @@ from keras.layers import Embedding
 from keras.layers import Concatenate
 ```
 
-# define the standalone discriminator model
+## define the standalone discriminator model
 ```
 def define_discriminator(in_shape=(28,28,1), n_classes=10):
 	# label input
@@ -56,7 +56,7 @@ def define_discriminator(in_shape=(28,28,1), n_classes=10):
 	return model
 ```
 
-# define the standalone generator model
+## define the standalone generator model
 
 ```
 def define_generator(latent_dim, n_classes=10):
@@ -91,7 +91,7 @@ def define_generator(latent_dim, n_classes=10):
 	return model
 ```
 
-# define the combined generator and discriminator model, for updating the generator
+## define the combined generator and discriminator model, for updating the generator
 ```
 def define_gan(g_model, d_model):
 	# make weights in the discriminator not trainable
@@ -110,7 +110,7 @@ def define_gan(g_model, d_model):
 	return model
 ```
 
-# load fashion mnist images
+## load fashion mnist images
 ```
 def load_real_samples():
 	# load dataset
@@ -123,7 +123,7 @@ def load_real_samples():
 	X = (X - 127.5) / 127.5
 	return [X, trainy]
 ```
-# select real samples
+## select real samples
 ```
 def generate_real_samples(dataset, n_samples):
 	# split into images and labels
@@ -137,7 +137,7 @@ def generate_real_samples(dataset, n_samples):
 	return [X, labels], y
 ```
 
-# generate points in latent space as input for the generator
+## generate points in latent space as input for the generator
 ```
 def generate_latent_points(latent_dim, n_samples, n_classes=10):
 	# generate points in the latent space
@@ -149,7 +149,7 @@ def generate_latent_points(latent_dim, n_samples, n_classes=10):
 	return [z_input, labels]
 ```
 
-# use the generator to generate n fake examples, with class labels
+## use the generator to generate n fake examples, with class labels
 ```
 def generate_fake_samples(generator, latent_dim, n_samples):
 	# generate points in latent space
@@ -161,7 +161,7 @@ def generate_fake_samples(generator, latent_dim, n_samples):
 	return [images, labels_input], y
 ```
 
-# train the generator and discriminator
+## train the generator and discriminator
 ```
 def train(g_model, d_model, gan_model, dataset, latent_dim, n_epochs=100, n_batch=128):
 	bat_per_epo = int(dataset[0].shape[0] / n_batch)
@@ -190,7 +190,7 @@ def train(g_model, d_model, gan_model, dataset, latent_dim, n_epochs=100, n_batc
 	# save the generator model
 	g_model.save('cgan_generator.h5')
 ```
-# start the model development
+## start the model development
 ```
 # size of the latent space
 latent_dim = 100
