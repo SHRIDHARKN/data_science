@@ -31,11 +31,11 @@ if __name__ == "__main__":
     result = get_prediction(ast.literal_eval(mdl_inps))
     print(result)  
 ```
-### build docker image (paste the code below):
+### build docker image :
 ```python
 docker build -t boston-hp-pred-app .
 ```
-### run docker image (paste the code below):
+### run docker image :
 ```python
 docker run -it boston-hp-pred-app
 ```
