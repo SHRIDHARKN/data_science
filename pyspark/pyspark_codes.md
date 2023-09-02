@@ -26,3 +26,17 @@ schema = StructType([StructField(name="id",dataType=IntegerType()),StructField(n
 df = spark.createDataFrame(data=data,schema=schema)
 df.show()
 ```
+### read csv file
+```
+schema = StructType().add(field='Date',data_type=StringType())\
+                     .add(field='Total',data_type=IntegerType())
+
+df = spark.read.csv(path=r'D:\data\tabular\time-series\sales\cat-fish-sales.csv',schema=schema,header=True)
+df.show(5)
+```
+OR
+```
+df = spark.read.format('csv').option(key='header',value=True).load(\
+                        path=r'D:\data\tabular\time-series\sales\cat-fish-sales.csv')
+
+```
