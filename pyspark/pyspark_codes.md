@@ -84,3 +84,17 @@ df.withColumn("skill",split(col("skill-set"),",")).show()
 df.withColumn("has-python-skill",array_contains(col("skill-set"),'python')).show()
 ```
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/bf7beda8-f046-4afe-b0db-199fcf32302a)
+### working with dictionaries 
+```
+data = [(1,"chandler",{"hairs":"white","eyes":"blue"}),
+        (2,"ross",{"hairs":"brown","eyes":"black"}),\
+        (3,"joey",{"hairs":"black","eyes":"brown"})]
+
+schema = StructType([StructField('id',IntegerType()),
+                     StructField('name',StringType()),
+                     StructField('appearance',MapType(StringType(),StringType()))])
+
+df = spark.createDataFrame(data=data,schema=schema)
+df.withColumn("hair",col("appearance")["hairs"]).show(truncate=False),\
+df.withColumn("hair",col("appearance").getItem("hairs")).show(truncate=False)
+```
