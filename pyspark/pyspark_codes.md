@@ -71,3 +71,16 @@ df = spark.createDataFrame(data=data,schema=schema)
 df.withColumn("skill",explode(col("skill-set"))).show()
 ```
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/f84dfea9-a1a6-48bc-9aa6-95ad28553bbf)
+### string split to array
+```
+data = [(1,"chandler","python,sql"),(2,"ross","machine-learning,deep-learninig"),(3,"joey","mongodb,aws")]
+schema = ["id","name","skill-set"]
+df = spark.createDataFrame(data=data,schema=schema)
+df.withColumn("skill",split(col("skill-set"),",")).show()
+```
+![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/ffcfb6f1-df35-4278-8718-73ee06578a5b)
+### check if array contains specific value
+```
+df.withColumn("has-python-skill",array_contains(col("skill-set"),'python')).show()
+```
+![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/bf7beda8-f046-4afe-b0db-199fcf32302a)
