@@ -40,3 +40,27 @@ df = spark.read.format('csv').option(key='header',value=True).load(\
                         path=r'D:\data\tabular\time-series\sales\cat-fish-sales.csv')
 
 ```
+### array type
+```
+schema = StructType().add(field='id',data_type=StringType())\
+                     .add(field='nums',data_type=ArrayType(IntegerType()))
+
+data  = [('alice',[1,2]),('bob',[4,5]),('candice',[5,6])]
+df = spark.createDataFrame(data=data,schema=schema)
+df.show()
+```
+![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/cb17a9c6-41aa-4f99-89ba-ce8b8763427d)
+### second element of array
+```
+df.withColumn('second-element',col('nums')[1]).show()
+```
+![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/989cc181-71ff-4621-a0ab-b94e4dc2e883)
+### combine two columns into one as array
+```
+data = [("chandler",1,2),("ross",3,4),("joey",5,6)]
+schema = ["name","num1","num2"]
+df = spark.createDataFrame(data=data,schema=schema)
+df.withColumn("nums",array(col("num1"),col("num2"))).show()
+```
+![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/bea2e614-b16b-4e53-a379-73b60fcf276a)
+
