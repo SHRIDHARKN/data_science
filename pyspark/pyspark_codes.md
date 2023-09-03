@@ -63,4 +63,11 @@ df = spark.createDataFrame(data=data,schema=schema)
 df.withColumn("nums",array(col("num1"),col("num2"))).show()
 ```
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/bea2e614-b16b-4e53-a379-73b60fcf276a)
-
+### explode array columns
+```
+data = [(1,"chandler",["python","sql"]),(2,"ross",["machine-learning","deep-learninig"]),(3,"joey",["mongodb","aws"])]
+schema = ["id","name","skill-set"]
+df = spark.createDataFrame(data=data,schema=schema)
+df.withColumn("skill",explode(col("skill-set"))).show()
+```
+![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/f84dfea9-a1a6-48bc-9aa6-95ad28553bbf)
