@@ -17,6 +17,7 @@ _this is to ignore downloading large files and avoid running into endless docker
 docker compose up airflow-init
 ```
 **start airflow services**
+* start the docker 
 ```
 docker compose up
 ```
