@@ -44,7 +44,7 @@ with DAG(
     task1 >> task3
 ```
 ## python dag - output from task as input to next
-```
+```python
 default_args = {
     "owner":"data-science-wizard",
     "retries":2,
