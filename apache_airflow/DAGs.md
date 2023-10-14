@@ -1,6 +1,6 @@
 # DAGs
 ## imports
-```
+```python
 from airflow import DAG
 from airflow.operators.bash import BashOperator
 from airflow.operators.python import PythonOperator
@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 
 ```
 ## bash operator dag
-```
+```python
 default_args = {
     "owner":"data-science-wizard",
     "retries":2,
