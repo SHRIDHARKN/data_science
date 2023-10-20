@@ -19,6 +19,7 @@ def get_vif_info(df,features,target):
         vif_scores.append(vif_i)
         
     vif_data["VIF"] = vif_scores
+    vif_data["multicollinearity_exists"] = np.where(vif_data["VIF"]>5,True,False)
     
     return vif_data
 ```
