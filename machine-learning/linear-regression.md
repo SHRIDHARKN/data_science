@@ -2,7 +2,7 @@
 
 ## check for multicollinearity - VIF
 ```python
-def get_vif_info(df,features,target):
+def get_vif_info(df,features,target,vif_thr=5):
     
     X = df[features]
     y = df[target]
@@ -19,7 +19,7 @@ def get_vif_info(df,features,target):
         vif_scores.append(vif_i)
         
     vif_data["VIF"] = vif_scores
-    vif_data["multicollinearity_exists"] = np.where(vif_data["VIF"]>5,True,False)
+    vif_data["multicollinearity_exists"] = np.where(vif_data["VIF"]>vif_thr,True,False)
     
     return vif_data
 ```
