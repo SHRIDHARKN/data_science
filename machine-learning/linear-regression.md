@@ -43,6 +43,11 @@ def get_vif_info(df,features,target,vif_thr=5):
     feats_2_drop = vif_data.features.loc[vif_data.multicollinearity_exists].values.tolist()
     return vif_data,feats_2_drop
 ```
+**Positive Autocorrelation:** model is consistently overshooting the target **(making predictions that are consistently too high)** or undershooting **(making predictions that are consistently too low)**. Basically **model isn't learning from its mistakes**.
+
+**Negative Autocorrelation:** Model will **overshoot, then undershoot, then overshoot again**. This can also be a problem because your model is **overcompensating**, and it's not making very accurate predictions.
+
+In a good model, the **errors** should be **random** and **not show a consistent pattern like overshooting or undershooting**. Autocorrelation tells us that our model isn't learning from its mistakes and may need some adjustments to make more accurate predictions.
 ### check for autocorrelation of residuals
 ```python
 def perf_durbin_watson_test(residuals):
