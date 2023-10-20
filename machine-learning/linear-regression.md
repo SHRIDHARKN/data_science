@@ -12,6 +12,19 @@ def get_scaled_data(df,features,target):
     return scaled_df,scaler
 
 ```
+### get feature coeffs
+```python
+def get_feature_imp(model):
+    df_feat_imp = pd.DataFrame()
+    df_feat_imp["features"] = model.feature_names_in_
+    max_feat_imp = np.max(model.coef_)
+    min_feat_imp = np.min(model.coef_)
+    diff_ = max_feat_imp-min_feat_imp
+    df_feat_imp["feature_importance_norm"] = [round(((x-min_feat_imp)/diff_)*100) for x in model.coef_]
+    df_feat_imp["feature_coeffs"] = model.coef_
+    
+    return df_feat_imp
+```
 ### check for multicollinearity - VIF
 ```python
 def get_vif_info(df,features,target,vif_thr=5):
