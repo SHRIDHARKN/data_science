@@ -12,7 +12,7 @@ def get_scaled_data(df,features,target):
     return scaled_df,scaler
 
 ```
-## check for multicollinearity - VIF
+### check for multicollinearity - VIF
 ```python
 def get_vif_info(df,features,target,vif_thr=5):
     
@@ -32,6 +32,6 @@ def get_vif_info(df,features,target,vif_thr=5):
         
     vif_data["VIF"] = vif_scores
     vif_data["multicollinearity_exists"] = np.where(vif_data["VIF"]>vif_thr,True,False)
-    
-    return vif_data
+    feats_2_drop = vif_data.features.loc[vif_data.multicollinearity_exists].values.tolist()
+    return vif_data,feats_2_drop
 ```
