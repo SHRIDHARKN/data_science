@@ -43,3 +43,20 @@ def get_vif_info(df,features,target,vif_thr=5):
     feats_2_drop = vif_data.features.loc[vif_data.multicollinearity_exists].values.tolist()
     return vif_data,feats_2_drop
 ```
+### check for autocorrelation of residuals
+```python
+def perf_durbin_watson_test(residuals):
+
+    # Perform the Durbin-Watson test
+    dw_statistic = durbin_watson(residuals)
+    # Check for autocorrelation
+    if dw_statistic < 1.5:
+        result = "positive autocorrelation of residuals"
+    elif dw_statistic > 2.5:
+        result = "negative autocorrelation of residuals"
+    else:
+        result = "no significant autocorrelation of residuals"
+
+    return {"Durbin-Watson statistic":round(dw_statistic,2),
+            "result":result}
+```
