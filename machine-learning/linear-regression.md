@@ -65,3 +65,5 @@ def perf_durbin_watson_test(residuals):
     return {"Durbin-Watson statistic":round(dw_statistic,2),
             "result":result}
 ```
+If a model is doing well for predicting prices of smaller houses, but it's doing poorly for larger houses, then predictions for the larger houses have a wider range of potential errors.
+Inefficient Parameter Estimates: Using more data for some parts of your model and less for others.
