@@ -1,6 +1,6 @@
 # Linear regression
 
-## get VIF 
+## check for multicollinearity - VIF
 ```python
 def get_vif_info(df,features,target):
     
