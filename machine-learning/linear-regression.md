@@ -9,7 +9,7 @@ def get_scaled_data(df,features,target):
     scaled_df = pd.DataFrame(scaled_data, columns=features)
     scaled_df[target] = df[target].values
 
-    return scaled_df
+    return scaled_df,scaler
 
 ```
 ## check for multicollinearity - VIF
