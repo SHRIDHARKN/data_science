@@ -1,5 +1,17 @@
 # Linear regression
 
+### get scaled data
+```python
+def get_scaled_data(df,features,target):
+    
+    scaler = MinMaxScaler()
+    scaled_data = scaler.fit_transform(df[features])
+    scaled_df = pd.DataFrame(scaled_data, columns=features)
+    scaled_df[target] = df[target].values
+
+    return scaled_df
+
+```
 ## check for multicollinearity - VIF
 ```python
 def get_vif_info(df,features,target,vif_thr=5):
