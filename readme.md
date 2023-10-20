@@ -7,7 +7,7 @@
 * **deep-learning** <br>
   - image-search-engine<br>
      * [fashion_image_search](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/image_search_engine)<br>
-* ** docker** <br>
+* **docker** <br>
   - [docker_commands](https://github.com/SHRIDHARKN/data_science/blob/main/docker/docker_commands.md)<br>
   - ml-apps -
         [boston-house-price](https://github.com/SHRIDHARKN/data_science/blob/main/docker/boston-hp-pred-app/project.md)
