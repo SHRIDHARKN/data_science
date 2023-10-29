@@ -16,3 +16,8 @@
 * [apache_airflow](https://github.com/SHRIDHARKN/data_science/blob/main/apache_airflow/apache_airflow_readme.md)<br>
     - [how to create DAGs?](https://github.com/SHRIDHARKN/data_science/blob/main/apache_airflow/DAGs.md)
 * [big_query](https://github.com/SHRIDHARKN/data_science/tree/main/big_query)<br>
+* **statistics**<br>
+  - data transformations
+  - [entropy](https://github.com/SHRIDHARKN/data_science/blob/main/statistics/notes.md#entropy)
+  - gini
+
