@@ -20,4 +20,5 @@
   - data transformations
   - [entropy](https://github.com/SHRIDHARKN/data_science/blob/main/statistics/notes.md#entropy)
   - gini
+  - [transfer entropy](https://github.com/SHRIDHARKN/data_science/blob/main/statistics/transfer%20entropy.ipynb)
 
