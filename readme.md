@@ -22,3 +22,5 @@
   - gini
   - [transfer entropy](https://github.com/SHRIDHARKN/data_science/blob/main/statistics/transfer%20entropy.ipynb)
 
+* sql **code execution**<br>
+  ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/8466fdcc-a55c-4027-86ed-48c852841ba2)
