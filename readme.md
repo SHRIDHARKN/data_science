@@ -2,7 +2,7 @@
 * **nlp** <br>
    * [text-classification-BERT](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/bert/Text%20Classification%20Using%20BERT.ipynb)<br>
    * [BERT-embeddings-and-sklearn-classifiers](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/bert/Text_classification_using_BERT_embeddings_and_sklearn_classifiers.ipynb)<br>
-   * [candidate-resume-tagging-wrod2vec-skipgram](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/candidate_n_resume_tagging/candidate_n_resume_tagging_from_job_description.ipynb)<br>
+   * [candidate-resume-tagging-word2vec-skipgram](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/candidate_n_resume_tagging/candidate_n_resume_tagging_from_job_description.ipynb)<br>
    
 * **deep-learning** <br>
   - image-search-engine<br>
