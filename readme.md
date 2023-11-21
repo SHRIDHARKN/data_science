@@ -8,7 +8,7 @@
   - image-search-engine<br>
      * [fashion_image_search](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/image_search_engine)<br>
   - generative ai <br>
-    * [image generation using variational autoencoders](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/generative_ai/image%20generation%20using%20variational%20auto%20encoders.ipynb)<br>
+    * image generation using variational autoencoders<br>
 
 
 
