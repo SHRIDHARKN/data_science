@@ -9,6 +9,7 @@
      * [fashion_image_search](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/image_search_engine)<br>
   - generative ai <br>
     * image generation using variational autoencoders<br>
+    * [anime character generation using DCGAN](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/generative_ai/anime_char_generator/generate-anime-DCGAN.ipynb)<br>
 
 
 
