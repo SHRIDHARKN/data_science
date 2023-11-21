@@ -10,6 +10,8 @@
   - generative ai <br>
     * image generation using variational autoencoders<br>
     * [anime character generation using DCGAN](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/generative_ai/anime_char_generator/generate-anime-DCGAN.ipynb)<br>
+    ![ezgif com-gif-maker (1)](https://github.com/SHRIDHARKN/data_science/assets/74343939/40f1cc91-677c-49dd-911b-c060f8183f0f)
+
 
 
 
