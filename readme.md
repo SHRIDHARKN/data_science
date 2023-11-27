@@ -5,6 +5,7 @@
    * [candidate-resume-tagging-word2vec-skipgram](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/candidate_n_resume_tagging/candidate_n_resume_tagging_from_job_description.ipynb)<br>
    
 * **deep-learning** <br>
+  - [image denoising using autoencoder](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/image_denoising_autoencoder/image_denoising.ipynb)
   - image-search-engine<br>
      * [fashion_image_search](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/image_search_engine)<br>
   - generative ai <br>
