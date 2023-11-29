@@ -1,4 +1,7 @@
 # data_science
+* code machine learning algorithms from scratch
+  * [linear regression](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/LinearRegression.py)<br>
+  * [k nearest neighbors](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/KNearestNeighbors.py)
 * **nlp** <br>
    * [text-classification-BERT](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/bert/Text%20Classification%20Using%20BERT.ipynb)<br>
    * [BERT-embeddings-and-sklearn-classifiers](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/bert/Text_classification_using_BERT_embeddings_and_sklearn_classifiers.ipynb)<br>
@@ -28,11 +31,6 @@
 * [apache_airflow](https://github.com/SHRIDHARKN/data_science/blob/main/apache_airflow/apache_airflow_readme.md)<br>
     - [how to create DAGs?](https://github.com/SHRIDHARKN/data_science/blob/main/apache_airflow/DAGs.md)
 * [big_query](https://github.com/SHRIDHARKN/data_science/tree/main/big_query)<br>
-* **statistics**<br>
-  - data transformations
-  - [entropy](https://github.com/SHRIDHARKN/data_science/blob/main/statistics/notes.md#entropy)
-  - gini
-  - [transfer entropy](https://github.com/SHRIDHARKN/data_science/blob/main/statistics/transfer%20entropy.ipynb)
 
 * sql **code execution**<br>
   ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/8466fdcc-a55c-4027-86ed-48c852841ba2)
