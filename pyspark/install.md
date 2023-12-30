@@ -8,10 +8,10 @@
 ### download Spark 3.5
 * [Spark 3.5.0](https://www.apache.org/dyn/closer.lua/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3.tgz)
 ### create a folder "pyspark" and add subfolder hadoop:
-### clone winutils
+### clone winutils in pyspark folder
 *
   ```
   git clone https://github.com/cdarlint/winutils  
   ```
-*  copy hadoop3.3.5/bin contents and paste in a folder hadopp created above
+* copy hadoop3.3.5/bin contents and paste in a folder hadopp created above
 * delete rest of the winutil files
