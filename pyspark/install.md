@@ -8,6 +8,7 @@
 ### clone winutils
 *
   ```
-  https://github.com/cdarlint/winutils  
+  git clone https://github.com/cdarlint/winutils  
   ```
 *  copy hadoop3.3.5/bin contents and paste in a folder hadopp created above
+* delete rest of the winutil files
