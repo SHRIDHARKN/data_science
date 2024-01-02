@@ -23,3 +23,7 @@ conda install python=3.11
 ```
 python --version
 ```
+**activate environment in D drive**
+```
+ conda activate D:\data_science_projects\llm\llm_env
+```
