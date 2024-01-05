@@ -1,9 +1,9 @@
 # data_science
 * code machine learning algorithms from scratch
   * linear regression - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/LinearRegression.py)<br>
-  * [k nearest neighbors - regression and classification](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/KNearestNeighbors.py)<br>
-  * [k means clustering](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/Kmeans.py)
-  * [decision tree classifier](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/DecisionTreeClasssifier.py)
+  * k nearest neighbors - regression and classification - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/KNearestNeighbors.py)<br>
+  * k means clustering - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/Kmeans.py)
+  * decision tree classifier - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/DecisionTreeClasssifier.py)
 * **nlp** <br>
    * [text-classification-random-forest-classifier](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/text_classification/Text_Classification_Random_Forest_Classifier.ipynb)<br>
    * [text-classification-BERT](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/bert/Text%20Classification%20Using%20BERT.ipynb)<br>
