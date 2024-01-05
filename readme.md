@@ -1,6 +1,6 @@
 # data_science
 * code machine learning algorithms from scratch
-  * linear regression - [link] (https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/LinearRegression.py)<br>
+  * linear regression - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/LinearRegression.py)<br>
   * [k nearest neighbors - regression and classification](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/KNearestNeighbors.py)<br>
   * [k means clustering](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/Kmeans.py)
   * [decision tree classifier](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/DecisionTreeClasssifier.py)
