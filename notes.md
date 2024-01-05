@@ -4,5 +4,5 @@
 ## entropy
 $$Entropy = - \sum_{i=1}^{n} prob(class_i) \log(prob(class_i))$$
 ## logistic regression derivation
-![log_reg_derivation](https://github.com/SHRIDHARKN/data_science/assets/74343939/3b063489-bcb2-4e1b-b20e-536114f924b2)
+![log_reg_derivation](https://github.com/SHRIDHARKN/data_science/assets/74343939/3a4ff7db-12e8-4555-b426-c9f797670feb)
 
