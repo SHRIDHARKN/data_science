@@ -10,7 +10,7 @@
 **1. U-Net - image background removal using human segmentation** - [link](https://github.com/SHRIDHARKN/data_science/blob/fe16b14432744f15d7513319a3697565f0cacdfb/deep_learning/image_segmentation/human_segmentation/human_segmentation.ipynb)<br>
 **2. image denoising using autoencoder** - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/image_denoising_autoencoder/image_denoising.ipynb)<br>
 **3. image-search-engine**<br>
-      * fashion_image_search - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/image_search_engine)<br>
+     - **fashion_image_search** - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/image_search_engine)<br>
 ## generative ai
 **1. anime character generation using DCGAN** - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/generative_ai/anime_char_generator/generate-anime-DCGAN.ipynb)<br>
       ![ezgif com-resize](https://github.com/SHRIDHARKN/data_science/assets/74343939/36d23434-d570-460b-a814-4bcbc49b5831)
