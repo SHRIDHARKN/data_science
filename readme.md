@@ -1,6 +1,6 @@
 # data_science
 * code machine learning algorithms from scratch
-  * [line]Here is a <a href="[https://example.com](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/LinearRegression.py))" style="color: green;">green hyperlink</a>.
+  * Here is a <a href="[https://example.com](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/LinearRegression.py))" style="color: green;">green hyperlink</a>.
 
   * [linear regression](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/LinearRegression.py)<br>
   * [k nearest neighbors - regression and classification](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/KNearestNeighbors.py)<br>
