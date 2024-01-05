@@ -1,9 +1,9 @@
 # data_science
-* code machine learning algorithms from scratch
-  * <b><u>linear regression - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/LinearRegression.py)</u></b>
-  * <b><u>k nearest neighbors - regression and classification - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/KNearestNeighbors.py)<b><u>
-  * k means clustering - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/Kmeans.py)
-  * decision tree classifier - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/DecisionTreeClasssifier.py)
+#### code machine learning algorithms from scratch
+* <b><u>linear regression - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/LinearRegression.py)</u></b>
+* <b><u>k nearest neighbors - regression and classification - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/KNearestNeighbors.py)<b><u>
+* k means clustering - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/Kmeans.py)
+* decision tree classifier - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/DecisionTreeClasssifier.py)
 * **nlp** <br>
    * [text-classification-random-forest-classifier](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/text_classification/Text_Classification_Random_Forest_Classifier.ipynb)<br>
    * [text-classification-BERT](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/bert/Text%20Classification%20Using%20BERT.ipynb)<br>
