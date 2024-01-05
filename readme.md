@@ -4,20 +4,22 @@
 <b><u>2. k nearest neighbors - regression and classification - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/KNearestNeighbors.py)<b><u><br>
 <b><u>3. k means clustering - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/Kmeans.py)<b><u><br>
 <b><u>4. decision tree classifier - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/DecisionTreeClasssifier.py)<b><u><br>
+
+* **deep-learning** <br>
+<b><u>1. U-Net - image background removal using human segmentation - [link](https://github.com/SHRIDHARKN/data_science/blob/fe16b14432744f15d7513319a3697565f0cacdfb/deep_learning/image_segmentation/human_segmentation/human_segmentation.ipynb)<b><u>
+<b><u>2. image denoising using autoencoder - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/image_denoising_autoencoder/image_denoising.ipynb)
+  - image-search-engine<b><u><br>
+     * [fashion_image_search](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/image_search_engine)<br>
+  - generative ai <br>
+    * [anime character generation using DCGAN](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/generative_ai/anime_char_generator/generate-anime-DCGAN.ipynb)<br>
+      ![ezgif com-resize](https://github.com/SHRIDHARKN/data_science/assets/74343939/36d23434-d570-460b-a814-4bcbc49b5831)
+
 * **nlp** <br>
    * [text-classification-random-forest-classifier](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/text_classification/Text_Classification_Random_Forest_Classifier.ipynb)<br>
    * [text-classification-BERT](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/bert/Text%20Classification%20Using%20BERT.ipynb)<br>
    * [BERT-embeddings-and-sklearn-classifiers](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/bert/Text_classification_using_BERT_embeddings_and_sklearn_classifiers.ipynb)<br>
    * [candidate-resume-tagging-word2vec-skipgram](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/candidate_n_resume_tagging/candidate_n_resume_tagging_from_job_description.ipynb)<br>
    
-* **deep-learning** <br>
-  - [U-Net - image background removal using human segmentation](https://github.com/SHRIDHARKN/data_science/blob/fe16b14432744f15d7513319a3697565f0cacdfb/deep_learning/image_segmentation/human_segmentation/human_segmentation.ipynb)
-  - [image denoising using autoencoder](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/image_denoising_autoencoder/image_denoising.ipynb)
-  - image-search-engine<br>
-     * [fashion_image_search](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/image_search_engine)<br>
-  - generative ai <br>
-    * [anime character generation using DCGAN](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/generative_ai/anime_char_generator/generate-anime-DCGAN.ipynb)<br>
-      ![ezgif com-resize](https://github.com/SHRIDHARKN/data_science/assets/74343939/36d23434-d570-460b-a814-4bcbc49b5831)
 
 
 
