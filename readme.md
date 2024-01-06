@@ -40,6 +40,5 @@
 * sql **code execution**<br>
   ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/8466fdcc-a55c-4027-86ed-48c852841ba2)
 
-![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/a16f0ebf-4a86-4af3-bf04-2df11322fa6e)
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/0eb3e54f-f05b-4c3f-8223-8588ead5f95d)
 
