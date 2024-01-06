@@ -37,10 +37,5 @@
     - [how to create DAGs?](https://github.com/SHRIDHARKN/data_science/blob/main/apache_airflow/DAGs.md)
 * [big_query](https://github.com/SHRIDHARKN/data_science/tree/main/big_query)<br>
 
-* sql **code execution**<br>
-  ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/8466fdcc-a55c-4027-86ed-48c852841ba2)
 
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/422ca4b1-3bcd-42ae-9726-6d5a343449c3)
-
-![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/0eb3e54f-f05b-4c3f-8223-8588ead5f95d)
-
