@@ -27,3 +27,7 @@ python --version
 ```
  conda activate D:\data_science_projects\llm\llm_env
 ```
+**remove environment from D drive**
+```
+conda env remove --prefix D:\data_science_projects\llm\llm_env
+```
