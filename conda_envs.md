@@ -31,3 +31,7 @@ python --version
 ```
 conda env remove --prefix D:\data_science_projects\llm\llm_env
 ```
+**check if gpu is detected**
+```
+python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+```
