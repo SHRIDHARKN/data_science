@@ -25,7 +25,7 @@ python --version
 ```
 **create a env in D drive**
 ```
-conda create --prefix D:\data_science_projects\llm\ll_env python=3.10
+conda create --prefix D:\data_science_projects\llm\llm_env python=3.10
 ```
 **activate env in D drive**
 ```
