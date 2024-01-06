@@ -23,11 +23,15 @@ conda install python=3.11
 ```
 python --version
 ```
-**activate environment in D drive**
+**create a env in D drive**
+```
+conda create --prefix D:\data_science_projects\llm\ll_env python=3.10
+```
+**activate env in D drive**
 ```
  conda activate D:\data_science_projects\llm\llm_env
 ```
-**remove environment from D drive**
+**remove env from D drive**
 ```
 conda env remove --prefix D:\data_science_projects\llm\llm_env
 ```
