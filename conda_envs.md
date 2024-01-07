@@ -1,3 +1,4 @@
+![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/33871c2e-d40c-4263-bbe7-5479bc8eec07)
 # conda commands
 **show environment names**<br>
 ```
