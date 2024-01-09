@@ -36,7 +36,7 @@ conda create --prefix D:\data_science_projects\llm\llm_env python=3.10
 ```
 conda env remove --prefix D:\data_science_projects\llm\llm_env
 ```
-![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/79a0075c-6a3f-461f-803b-23a6f1f97aa4)
+![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/79a0075c-6a3f-461f-803b-23a6f1f97aa4)<br>
 **cuda/gpu setup in a conda environment**
 ```
 conda create --prefix D:\data_science_projects\llm\llm_env python=3.10
