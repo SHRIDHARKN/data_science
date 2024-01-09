@@ -1,8 +1,4 @@
-import matplotlib.pyplot as plt
-from sklearn import datasets
-from sklearn.model_selection import train_test_split
 import numpy as np
-
 
 def sigmoid(x):
     return 1/(1+np.exp(-x))
