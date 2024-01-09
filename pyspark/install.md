@@ -6,7 +6,7 @@
   C:\Program Files\Java\jdk-21
   ```
 ### download Spark 3.5
-* [Spark 3.5.0](https://www.apache.org/dyn/closer.lua/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3.tgz)
+* Spark 3.5.0 [link](https://www.apache.org/dyn/closer.lua/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3.tgz)
 ### create a folder "pyspark" and add subfolder hadoop:
 ### clone winutils in pyspark folder
 *
