@@ -43,4 +43,4 @@
 * [big_query](https://github.com/SHRIDHARKN/data_science/tree/main/big_query)<br>
 
 
-![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/422ca4b1-3bcd-42ae-9726-6d5a343449c3)
+![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/45dc5bb3-6a84-4136-aa27-12138d77f544)
