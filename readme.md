@@ -2,9 +2,11 @@
 ## machine learning
 ### code machine learning algorithms from scratch
 **1. linear regression - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/LinearRegression.py)**<br>
-**2. k nearest neighbors - regression and classification - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/KNearestNeighbors.py)**<br>
-**3. k means clustering - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/Kmeans.py)**<br>
-**4. decision tree classifier - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/DecisionTreeClasssifier.py)**<br>
+**2. logistic regression - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/LinearRegression.py)**<br>
+
+**3. k nearest neighbors - regression and classification - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/KNearestNeighbors.py)**<br>
+**4. k means clustering - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/Kmeans.py)**<br>
+**5. decision tree classifier - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/DecisionTreeClasssifier.py)**<br>
 
 ## deep-learning
 **1. U-Net - image background removal using human segmentation** - [link](https://github.com/SHRIDHARKN/data_science/blob/fe16b14432744f15d7513319a3697565f0cacdfb/deep_learning/image_segmentation/human_segmentation/human_segmentation.ipynb)<br>
