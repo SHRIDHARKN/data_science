@@ -1,7 +1,7 @@
 # data_science
 ## machine learning
 ### code machine learning algorithms from scratch
-**1. linear regression - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/LinearRegression.py)**<br>
+**- 1. linear regression - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/LinearRegression.py)**<br>
 **2. logistic regression - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/LogisticRegression.py)**
 - **notes - [link](https://github.com/SHRIDHARKN/data_science/blob/main/notes.md#logistic-regression-derivation)**<br>
 
