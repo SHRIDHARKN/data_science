@@ -37,6 +37,20 @@ conda create --prefix D:\data_science_projects\llm\llm_env python=3.10
 conda env remove --prefix D:\data_science_projects\llm\llm_env
 ```
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/79a0075c-6a3f-461f-803b-23a6f1f97aa4)<br>
+### cuda setup
+- Install cuda 11.4
+- Set the path in system variables
+```C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\extras\CUPTI\lib64```
+```C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\include```
+- Extract cudnn-windows-x86_64-8.9.6.50_cuda11-archive
+- create a folder C:\cudnn
+- paste the contents – bin/include/lib
+- set the path in system variables
+```C:\cudnn\bin```
+```C:\cudnn\include```
+```C:\cudnn\lib\x64```
+
+
 ### cuda/gpu setup in a conda environment
 ```
 conda create --prefix D:\data_science_projects\llm\llm_env python=3.10
