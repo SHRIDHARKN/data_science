@@ -13,5 +13,5 @@
   ```
   git clone https://github.com/cdarlint/winutils  
   ```
-* copy hadoop3.3.5/bin contents and paste in a folder hadopp created above
+* copy hadoop3.3.5/bin contents and paste in a folder hadoop created above
 * delete rest of the winutil files
