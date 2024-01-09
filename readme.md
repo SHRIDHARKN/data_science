@@ -31,12 +31,13 @@
 
      
 ## docker
-  - docker commands [link](https://github.com/SHRIDHARKN/data_science/blob/main/docker/docker_commands.md)<br>
-  - ml-apps -
-        boston-house-price [link](https://github.com/SHRIDHARKN/data_science/blob/main/docker/boston-hp-pred-app/project.md)
-## conda_commands
-  - [link](https://github.com/SHRIDHARKN/data_science/blob/main/conda_envs.md)<br>
-* [git_commands](https://github.com/SHRIDHARKN/data_science/blob/main/git_cmds/git_commands.md)<br>
+- docker commands [link](https://github.com/SHRIDHARKN/data_science/blob/main/docker/docker_commands.md)<br>
+- ml-apps -
+ boston-house-price [link](https://github.com/SHRIDHARKN/data_science/blob/main/docker/boston-hp-pred-app/project.md)
+## anaconda 
+- conda_commands [link](https://github.com/SHRIDHARKN/data_science/blob/main/conda_envs.md)<br>
+## git
+- [git_commands](https://github.com/SHRIDHARKN/data_science/blob/main/git_cmds/git_commands.md)<br>
 * [apache_airflow](https://github.com/SHRIDHARKN/data_science/blob/main/apache_airflow/apache_airflow_readme.md)<br>
     - [how to create DAGs?](https://github.com/SHRIDHARKN/data_science/blob/main/apache_airflow/DAGs.md)
 * [big_query](https://github.com/SHRIDHARKN/data_science/tree/main/big_query)<br>
