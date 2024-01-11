@@ -16,6 +16,7 @@
        - **fashion_image_search** - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/image_search_engine)<br>
 ## generative ai
 **1. conditional generative adverserial networks CGans** - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/conditional_gans/conditional_gans_mnist.ipynb)<br>
+![ezgif com-resize](https://github.com/SHRIDHARKN/data_science/assets/74343939/9655f786-f130-46ca-b623-01be9702975e)
 **2. anime character generation using DCGAN** - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/generative_ai/anime_char_generator/generate-anime-DCGAN.ipynb)<br>
       ![ezgif com-resize](https://github.com/SHRIDHARKN/data_science/assets/74343939/36d23434-d570-460b-a814-4bcbc49b5831)
 
