@@ -1,0 +1,2 @@
+model_checkpoint_path: "mdl_chkpt_50.h5-1"
+all_model_checkpoint_paths: "mdl_chkpt_50.h5-1"
