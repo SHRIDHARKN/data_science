@@ -76,3 +76,6 @@ conda install -c conda-forge cudatoolkit=11.4 cudnn=8.2
 ```
 python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
 ```
+```
+python -c "import torch; print(torch.cuda.device_count())"
+```
