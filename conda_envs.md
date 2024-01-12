@@ -62,6 +62,13 @@ C:\cudnn\lib\x64
 
 
 ### cuda/gpu setup in a conda environment
+#### for pytorch
+```
+conda install torch==1.12.0+cu116 torchvision==0.13.0+cu116 torchaudio==0.12.0 --extra-index-url https://download.pytorch.org/whl/cu116
+```
+```
+python -c "import torch; print(torch.cuda.device_count())"
+```
 ```
 conda create --prefix D:\data_science_projects\llm\llm_env python=3.10
 ```
@@ -75,7 +82,4 @@ conda install -c conda-forge cudatoolkit=11.4 cudnn=8.2
 **check if gpu is detected**
 ```
 python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
-```
-```
-python -c "import torch; print(torch.cuda.device_count())"
 ```
