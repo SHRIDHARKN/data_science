@@ -36,6 +36,7 @@
 - docker commands [link](https://github.com/SHRIDHARKN/data_science/blob/main/docker/docker_commands.md)<br>
 - ml-apps -
  boston-house-price [link](https://github.com/SHRIDHARKN/data_science/blob/main/docker/boston-hp-pred-app/project.md)
+![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/33871c2e-d40c-4263-bbe7-5479bc8eec07)
 ## anaconda 
 - conda_commands [link](https://github.com/SHRIDHARKN/data_science/blob/main/conda_envs.md)<br>
 ## git
