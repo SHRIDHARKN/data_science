@@ -24,6 +24,10 @@ conda install python=3.11
 ```
 python --version
 ```
+**remove unused packages**
+```
+conda clean --yes --all
+```
 **create a env in D drive**
 ```
 conda create --prefix D:\data_science_projects\llm\llm_env python=3.10
