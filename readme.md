@@ -39,7 +39,7 @@
 ## anaconda
 - conda_commands [link](https://github.com/SHRIDHARKN/data_science/blob/main/conda_envs.md)<br>
 ## git
-**- git_commands** -[link](https://github.com/SHRIDHARKN/data_science/blob/main/git_cmds/git_commands.md)<br>
+- git_commands -[link](https://github.com/SHRIDHARKN/data_science/blob/main/git_cmds/git_commands.md)<br>
 * [apache_airflow](https://github.com/SHRIDHARKN/data_science/blob/main/apache_airflow/apache_airflow_readme.md)<br>
     - [how to create DAGs?](https://github.com/SHRIDHARKN/data_science/blob/main/apache_airflow/DAGs.md)
 * [big_query](https://github.com/SHRIDHARKN/data_science/tree/main/big_query)<br>
