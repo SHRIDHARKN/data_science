@@ -16,17 +16,17 @@
        - **fashion_image_search** - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/image_search_engine)<br>
 
 ## nlp
-**1. langchain-chromadb-semantic-search** [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/semantic_search.ipynb)<br>
-**2. text to sql - langchain-chromadb-few-shot-learn**[link]
-**2. text-classification-random-forest-classifier** [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/text_classification/Text_Classification_Random_Forest_Classifier.ipynb)<br>
-**3. text-classification-BERT** [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/bert/Text%20Classification%20Using%20BERT.ipynb)<br>
-**4. BERT-embeddings-and-sklearn-classifiers** [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/bert/Text_classification_using_BERT_embeddings_and_sklearn_classifiers.ipynb)<br>
-**5. candidate-resume-tagging-word2vec-skipgram** [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/candidate_n_resume_tagging/candidate_n_resume_tagging_from_job_description.ipynb)<br>
+**1. text-classification-random-forest-classifier** [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/text_classification/Text_Classification_Random_Forest_Classifier.ipynb)<br>
+**2. text-classification-BERT** [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/bert/Text%20Classification%20Using%20BERT.ipynb)<br>
+**3. BERT-embeddings-and-sklearn-classifiers** [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/bert/Text_classification_using_BERT_embeddings_and_sklearn_classifiers.ipynb)<br>
+**4. candidate-resume-tagging-word2vec-skipgram** [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/candidate_n_resume_tagging/candidate_n_resume_tagging_from_job_description.ipynb)<br>
 
 ## generative ai
-**1. conditional generative adverserial networks CGans** - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/conditional_gans/conditional_gans_mnist.ipynb)<br>
+**1. langchain-chromadb-semantic-search** [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/semantic_search.ipynb)<br>
+**2. text to sql - google-palm langchain-chromadb-few-shot-learn**[link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/text2llm_fewshotlearn.ipynb)<br>
+**3. conditional generative adverserial networks CGans** - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/conditional_gans/conditional_gans_mnist.ipynb)<br>
 ![ezgif com-resize](https://github.com/SHRIDHARKN/data_science/assets/74343939/9655f786-f130-46ca-b623-01be9702975e)<br>
-**2. anime character generation using DCGAN** - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/generative_ai/anime_char_generator/generate-anime-DCGAN.ipynb)<br>
+**4. anime character generation using DCGAN** - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/generative_ai/anime_char_generator/generate-anime-DCGAN.ipynb)<br>
       ![ezgif com-resize](https://github.com/SHRIDHARKN/data_science/assets/74343939/36d23434-d570-460b-a814-4bcbc49b5831)<br>
 
 
