@@ -22,8 +22,8 @@
 **4. candidate-resume-tagging-word2vec-skipgram** [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/candidate_n_resume_tagging/candidate_n_resume_tagging_from_job_description.ipynb)<br>
 
 ## generative ai
-**1. langchain-chromadb-semantic-search** [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/semantic_search.ipynb)<br>
-**2. text to sql - google-palm langchain-chromadb-few-shot-learn**[link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/text2llm_fewshotlearn.ipynb)<br>
+**1. langchain-chromadb-semantic-search** -[link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/semantic_search.ipynb)<br>
+**2. text to sql - google-palm langchain-chromadb-few-shot-learn** - [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/text2llm_fewshotlearn.ipynb)<br>
 **3. conditional generative adverserial networks CGans** - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/conditional_gans/conditional_gans_mnist.ipynb)<br>
 ![ezgif com-resize](https://github.com/SHRIDHARKN/data_science/assets/74343939/9655f786-f130-46ca-b623-01be9702975e)<br>
 **4. anime character generation using DCGAN** - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/generative_ai/anime_char_generator/generate-anime-DCGAN.ipynb)<br>
