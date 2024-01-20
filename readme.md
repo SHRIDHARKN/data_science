@@ -16,7 +16,8 @@
        - **fashion_image_search** - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/image_search_engine)<br>
 
 ## nlp
-**1. langchain-chromadb-semantic-search** [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/langchain/semantic_search.ipynb)<br>
+**1. langchain-chromadb-semantic-search** [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/semantic_search.ipynb)<br>
+**2. text to sql - langchain-chromadb-few-shot-learn**[link]
 **2. text-classification-random-forest-classifier** [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/text_classification/Text_Classification_Random_Forest_Classifier.ipynb)<br>
 **3. text-classification-BERT** [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/bert/Text%20Classification%20Using%20BERT.ipynb)<br>
 **4. BERT-embeddings-and-sklearn-classifiers** [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/bert/Text_classification_using_BERT_embeddings_and_sklearn_classifiers.ipynb)<br>
