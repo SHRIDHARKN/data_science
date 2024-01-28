@@ -20,7 +20,7 @@
 **2. text-classification-BERT [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/bert/Text%20Classification%20Using%20BERT.ipynb)**<br>
 **3. BERT-embeddings-and-sklearn-classifiers [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/bert/Text_classification_using_BERT_embeddings_and_sklearn_classifiers.ipynb)**<br>
 **4. candidate-resume-tagging-word2vec-skipgram [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/candidate_n_resume_tagging/candidate_n_resume_tagging_from_job_description.ipynb)**<br>
-
+**5. llm-quantisation [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/llm_quantization.ipynb)**<br>
 ## generative ai
 **1. langchain-chromadb-semantic-search -[link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/semantic_search.ipynb)**<br>
 **2. text to sql - google-palm langchain-chromadb-few-shot-learn - [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/text2llm_fewshotlearn.ipynb)**<br>
