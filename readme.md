@@ -13,7 +13,7 @@
 **1. U-Net - image background removal using human segmentation - [link](https://github.com/SHRIDHARKN/data_science/blob/fe16b14432744f15d7513319a3697565f0cacdfb/deep_learning/image_segmentation/human_segmentation/human_segmentation.ipynb)**<br>
 **2. image denoising using autoencoder - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/image_denoising_autoencoder/image_denoising.ipynb)**<br>
 **3. image-search-engine**<br>
-       - **fashion_image_search - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/image_search_engine)**<br>
+       - **fashion_image_search - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/image_search_engine)**<br>       
 
 ## nlp
 **1. text-classification-random-forest-classifier [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/text_classification/Text_Classification_Random_Forest_Classifier.ipynb)**<br>
@@ -22,6 +22,7 @@
 **4. candidate-resume-tagging-word2vec-skipgram [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/candidate_n_resume_tagging/candidate_n_resume_tagging_from_job_description.ipynb)**<br>
 **5. gpt2-finetuned-customer-support-chatbot [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/gpt2_finetune_cust_supp.ipynb)**<br>
 **6. llm-quantisation [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/llm_quantization.ipynb)**<br>
+**7  sentiment-classification-neural-networks  [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/text_classification/emotion%20classification.ipynb)**<br>
 ## generative ai
 **1. langchain-chromadb-semantic-search -[link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/semantic_search.ipynb)**<br>
 **2. text to sql - google-palm langchain-chromadb-few-shot-learn - [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/text2llm_fewshotlearn.ipynb)**<br>
