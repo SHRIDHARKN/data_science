@@ -16,20 +16,27 @@
 * copy hadoop3.3.5/bin contents and paste in a folder hadoop created above
 * delete rest of the winutil files
 ### set paths in user environment variables
-```%SPARK_HOME% - C:\pyspark\spark-3.5.0
 ```
-```%HADOOP_HOME% - C:\pyspark\hadoop
+%SPARK_HOME% - C:\pyspark\spark-3.5.0
 ```
-```%JAVA_HOME% - C:\Program Files\Java\jdk-21
 ```
-```%PYSPARK_HOME% - path to python executable
+%HADOOP_HOME% - C:\pyspark\hadoop
+```
+```
+%JAVA_HOME% - C:\Program Files\Java\jdk-21
+```
+```
+%PYSPARK_HOME% - path to python executable
 ```
 #### CLICK ON PATH AND ADD BIN PATHS
-``%SPARK_HOME%\bin
 ```
-```%HADOOP_HOME%\bin
+%SPARK_HOME%\bin
 ```
-```%JAVA_HOME%\bin
+```
+%HADOOP_HOME%\bin
+```
+```
+%JAVA_HOME%\bin
 ```
 ```%PYSPARK_HOME%
 ```
