@@ -28,6 +28,14 @@ python --version
 ```
 conda clean --yes --all
 ```
+**create kernel in jupyter notebook**
+```
+conda activate env
+pip install ipykernel
+python -m ipykernel install --user --name my_env --display-name "My Environment"
+
+```
+
 **create a env in D drive**
 ```
 conda create --prefix D:\data_science_projects\llm\llm_env python=3.10
