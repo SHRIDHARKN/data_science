@@ -8,5 +8,5 @@ $$Entropy = - \sum_{i=1}^{n} prob(class_i) \log(prob(class_i))$$
 ## support vector classifier
 ![support vector classifier](https://github.com/SHRIDHARKN/data_science/assets/74343939/c5f79abe-81cc-4605-a923-a5a80b6b9f3c)
 ## gradient boost classifier
-![gradient boost classifier]![gradboostfinal](https://github.com/SHRIDHARKN/data_science/assets/74343939/967c09a0-13ac-424b-bb62-b2e9e9c38164)
+![gradient boost classifier](https://github.com/SHRIDHARKN/data_science/assets/74343939/967c09a0-13ac-424b-bb62-b2e9e9c38164)
 
