@@ -31,9 +31,13 @@ conda clean --yes --all
 **create kernel in jupyter notebook**
 ```
 conda activate env
+```
+```
 pip install ipykernel
+```
+```
 python -m ipykernel install --user --name <environemnt name> --display-name "<display name>"
-
+```
 ```
 
 **create a env in D drive**
