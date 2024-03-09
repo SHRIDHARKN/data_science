@@ -8,6 +8,9 @@
 **3. k nearest neighbors - regression and classification - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/KNearestNeighbors.py)**<br>
 **4. k means clustering - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/Kmeans.py)**<br>
 **5. decision tree classifier - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/DecisionTreeClasssifier.py)**<br>
+**5. gradient boost classifier **
+- **notes- [link](![gradboostfinal](https://github.com/SHRIDHARKN/data_science/assets/74343939/679a4996-27db-4829-9f84-e087e77e9a76))**<br>
+
 
 ## deep-learning
 **1. U-Net - image background removal using human segmentation - [link](https://github.com/SHRIDHARKN/data_science/blob/fe16b14432744f15d7513319a3697565f0cacdfb/deep_learning/image_segmentation/human_segmentation/human_segmentation.ipynb)**<br>
