@@ -32,7 +32,7 @@ conda clean --yes --all
 ```
 conda activate env
 pip install ipykernel
-python -m ipykernel install --user --name my_env --display-name "My Environment"
+python -m ipykernel install --user --name <environemnt name> --display-name "<display name>"
 
 ```
 
