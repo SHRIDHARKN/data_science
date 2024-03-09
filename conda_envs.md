@@ -38,7 +38,6 @@ pip install ipykernel
 ```
 python -m ipykernel install --user --name <environemnt name> --display-name "<display name>"
 ```
-```
 
 **create a env in D drive**
 ```
