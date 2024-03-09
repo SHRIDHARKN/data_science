@@ -9,7 +9,7 @@
 **4. k means clustering - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/Kmeans.py)**<br>
 **5. decision tree classifier - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/DecisionTreeClasssifier.py)**<br>
 **5. gradient boost classifier **
-- **notes- [link](![gradboostfinal](https://github.com/SHRIDHARKN/data_science/assets/74343939/679a4996-27db-4829-9f84-e087e77e9a76))**<br>
+- **notes-(![gradboostfinal](https://github.com/SHRIDHARKN/data_science/assets/74343939/679a4996-27db-4829-9f84-e087e77e9a76))**<br>
 
 
 ## deep-learning
