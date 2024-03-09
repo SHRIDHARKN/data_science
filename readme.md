@@ -8,7 +8,7 @@
 **3. k nearest neighbors - regression and classification - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/KNearestNeighbors.py)**<br>
 **4. k means clustering - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/Kmeans.py)**<br>
 **5. decision tree classifier - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/DecisionTreeClasssifier.py)**<br>
-**6. gradient boost classifier
+** 6. gradient boost classifier
 - **notes - [link](https://github.com/SHRIDHARKN/data_science/blob/main/notes.md#gradient-boost-classifier)**<br>
 
 
