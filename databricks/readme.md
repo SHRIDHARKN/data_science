@@ -1,7 +1,7 @@
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/aa710bbe-b961-4d7c-9476-24097ea91aec)
 
-### set operators
-#### union, union all, intersect, intersect all, minus or except, except all
+## set operators
+### union, union all, intersect, intersect all, minus or except, except all
 same structure - use set operators<br>
 `union removes duplicate records`
 ```
