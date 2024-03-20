@@ -1,5 +1,6 @@
 ## 
 - `spark set operations`
 - `llama architecture - overview`
-- next stable diffusion code
+- `stable diffusion code for required image generation`
+- next unet implement
 - next bert in depth
