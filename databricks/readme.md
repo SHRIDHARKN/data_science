@@ -1,5 +1,13 @@
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/aa710bbe-b961-4d7c-9476-24097ea91aec)
 
+### randomly sample data
+
+```
+select * from eventsRaw TABLESAMPLE (1 PERCENT)
+```
+```
+select * from eventsRaw TABLESAMPLE (7 ROWS)
+```
 ## set operators
 ### union, union all, intersect, intersect all, minus or except, except all
 same structure - use set operators<br>
@@ -36,6 +44,7 @@ select * from person1
 except all
 select * from person2
 ```
+
 
 
 
