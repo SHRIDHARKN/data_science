@@ -2,8 +2,8 @@
 
 ### managed table and external table
   - first create an external table then create a managed table
-  - ```sql
-    -- Step 1: Create External Table
+```sql
+-- Step 1: Create External Table
 CREATE TABLE outdoorProductsRaw_external USING csv OPTIONS (
   path "/mnt/training/online_retail/data-001/data.csv",
   header "true"
@@ -15,7 +15,7 @@ USING DELTA
 LOCATION '/mnt/training/online_retail/data-001/managed_table/'
 AS SELECT * FROM outdoorProductsRaw_external;
 
-    ```
+```
 
 
 ### temporary view vs view
