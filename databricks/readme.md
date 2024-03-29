@@ -1,5 +1,28 @@
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/aa710bbe-b961-4d7c-9476-24097ea91aec)
 
+### managed table and external table
+  - first create an external table then create a managed table
+  - ```sql
+    -- Step 1: Create External Table
+CREATE TABLE outdoorProductsRaw_external USING csv OPTIONS (
+  path "/mnt/training/online_retail/data-001/data.csv",
+  header "true"
+);
+
+-- Step 2: Create Managed Table using External Table
+CREATE TABLE outdoorProductsRaw_managed
+USING DELTA
+LOCATION '/mnt/training/online_retail/data-001/managed_table/'
+AS SELECT * FROM outdoorProductsRaw_external;
+
+    ```
+
+
+### temporary view vs view
+  - view persists in the database whereas temporary view is available onyl for the duration of spark session
+  - restarting session gives error
+
+
 ### randomly sample data
 
 ```
