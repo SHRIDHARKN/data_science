@@ -65,7 +65,7 @@ select * from person2
 select * from person1
 intersect
 select * from person2
-```sql
+```
 `intersect all - record common to both A and B, but with duplicates`
 <br>
 `except - records in A but not in B and without duplicates`
@@ -74,7 +74,7 @@ select * from person2
 select * from person1
 except
 select * from person2
-```sql
+```
 `except all- records in A but not in B and with duplicates from A`
 ```sql
 select * from person1
