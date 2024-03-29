@@ -16,13 +16,17 @@ LOCATION '/mnt/training/online_retail/data-001/managed_table/'
 AS SELECT * FROM outdoorProductsRaw_external;
 
 ```
-
-
 ### temporary view vs view
   - view persists in the database whereas temporary view is available onyl for the duration of spark session
   - restarting session gives error
 
-
+### pad to left upto n chars
+```sql
+lpad(<col name>,<number of chars>,<char to replace> )
+```
+```sql
+select month,lpad(month,2,0 ) as month_padded from outdoorProducts order by month asc limit 5
+```
 ### randomly sample data
 
 ```
