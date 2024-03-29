@@ -29,54 +29,54 @@ select month,lpad(month,2,0 ) as month_padded from outdoorProducts order by mont
 ```
 ### randomly sample data
 
-```
+```sql
 select * from eventsRaw TABLESAMPLE (1 PERCENT)
 ```
-```
+```sql
 select * from eventsRaw TABLESAMPLE (7 ROWS)
 ```
 ### working with dates
-```
+```sql
 SELECT date_format(concat_ws("-", 2020, 10, 5), "yyyy-MM-dd")
 ```
-```
+```sql
 SELECT to_date(concat_ws("/", "10", "05", "20"),"MM/dd/yy")
 ```
-```
+```sql
 SELECT to_date(concat_ws("/", "10", "05", "2020"),"MM/dd/yyyy")
 ```
 ## set operators
 ### union, union all, intersect, intersect all, minus or except, except all
 same structure - use set operators<br>
 `union removes duplicate records`
-```
+```sql
 select * from person1
 union 
 select * from person2
 ```
 `union all provides all the records from A and B`
-```
+```sql
 select * from person1
 union all
 select * from person2
 ```
 `intersect - record common to both A and B, but without duplicates`
-```
+```sql
 select * from person1
 intersect
 select * from person2
-```
+```sql
 `intersect all - record common to both A and B, but with duplicates`
 <br>
 `except - records in A but not in B and without duplicates`
 `except and minus are same`
-```
+```sql
 select * from person1
 except
 select * from person2
-```
+```sql
 `except all- records in A but not in B and with duplicates from A`
-```
+```sql
 select * from person1
 except all
 select * from person2
