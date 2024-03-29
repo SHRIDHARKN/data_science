@@ -45,6 +45,10 @@ SELECT to_date(concat_ws("/", "10", "05", "20"),"MM/dd/yy")
 ```sql
 SELECT to_date(concat_ws("/", "10", "05", "2020"),"MM/dd/yyyy")
 ```
+### get week day from date
+```sql
+select *,date_format(date,"E" ) as weekday from salesDateFormatted
+```
 ## set operators
 ### union, union all, intersect, intersect all, minus or except, except all
 same structure - use set operators<br>
