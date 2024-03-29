@@ -35,6 +35,16 @@ select * from eventsRaw TABLESAMPLE (1 PERCENT)
 ```
 select * from eventsRaw TABLESAMPLE (7 ROWS)
 ```
+### working with dates
+```
+SELECT date_format(concat_ws("-", 2020, 10, 5), "yyyy-MM-dd")
+```
+```
+SELECT to_date(concat_ws("/", "10", "05", "20"),"MM/dd/yy")
+```
+```
+SELECT to_date(concat_ws("/", "10", "05", "2020"),"MM/dd/yyyy")
+```
 ## set operators
 ### union, union all, intersect, intersect all, minus or except, except all
 same structure - use set operators<br>
