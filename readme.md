@@ -11,7 +11,7 @@
 **3. BERT-embeddings-and-sklearn-classifiers [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/bert/Text_classification_using_BERT_embeddings_and_sklearn_classifiers.ipynb)**<br>
 **4. candidate-resume-tagging-word2vec-skipgram [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/candidate_n_resume_tagging/candidate_n_resume_tagging_from_job_description.ipynb)**<br>
 **5. gpt2-finetuned-customer-support-chatbot [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/gpt2_finetune_cust_supp.ipynb)**<br>
-**6. llm-quantisation [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/llm_quantization.ipynb)**<br>
+**6. llm-quantisation [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/quantization-memory-footprint.ipynb)**<br>
 **7  sentiment-classification-neural-networks  [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/text_classification/emotion%20classification.ipynb)**<br>
 ## generative ai
 **1. langchain-chromadb-semantic-search -[link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/semantic_search.ipynb)**<br>
