@@ -1,5 +1,10 @@
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/aa710bbe-b961-4d7c-9476-24097ea91aec)
 
+### basic functions
+#### split string
+```python
+df.select("name","age","geo_code",split(split(df["geo_code"],"-")[1],"_")[0].alias("location"))
+```
 ### managed table and external table
   - first create an external table then create a managed table
 ```sql
@@ -49,16 +54,6 @@ SELECT to_date(concat_ws("/", "10", "05", "2020"),"MM/dd/yyyy")
 ```sql
 select *,date_format(date,"E" ) as weekday from salesDateFormatted
 ```
-### basic functions
-#### split string
-```python
-df.select("name","age","geo_code",split(split(df["geo_code"],"-")[1],"_")[0].alias("location"))
-```
-name	age	geo_code	location
-Alice	34	DIV-CHN_56001	CHN
-Bob	45	DIV-HYD_56002	HYD
-Charlie	26	DIV-DEL_56003	DEL
-David	56		null
 ## set operators
 ### union, union all, intersect, intersect all, minus or except, except all
 same structure - use set operators<br>
