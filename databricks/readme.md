@@ -54,6 +54,11 @@ select *,date_format(date,"E" ) as weekday from salesDateFormatted
 ```python
 df.select("name","age","geo_code",split(split(df["geo_code"],"-")[1],"_")[0].alias("location"))
 ```
+name	age	geo_code	location
+Alice	34	DIV-CHN_56001	CHN
+Bob	45	DIV-HYD_56002	HYD
+Charlie	26	DIV-DEL_56003	DEL
+David	56		null
 ## set operators
 ### union, union all, intersect, intersect all, minus or except, except all
 same structure - use set operators<br>
