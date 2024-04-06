@@ -15,6 +15,8 @@
 **7  sentiment-classification-neural-networks  [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/text_classification/emotion%20classification.ipynb)**<br>
 ## generative ai
 **1. stable diffusion from scratch (unconditional) - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/generative_ai/stable-diffusion-mini.ipynb)**<br>
+![ezgif com-animated-gif-maker](https://github.com/SHRIDHARKN/data_science/assets/74343939/17988cb2-83b9-4720-abe6-f0d7273ffcdd)
+
 **2. langchain-chromadb-semantic-search -[link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/semantic_search.ipynb)**<br>
 **3. llm-multiple-files-chat-langchain-chromadb -[link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/document_based_qa_langchain.ipynb)**<br>
 **4. text to sql - google-palm langchain-chromadb-few-shot-learn - [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/text2llm_fewshotlearn.ipynb)**<br>
