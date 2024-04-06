@@ -49,6 +49,10 @@ SELECT to_date(concat_ws("/", "10", "05", "2020"),"MM/dd/yyyy")
 ```sql
 select *,date_format(date,"E" ) as weekday from salesDateFormatted
 ```
+### basic functions
+```python
+df.select("name","age","geo_code",split(split(df["geo_code"],"-")[1],"_")[0].alias("location"))
+```
 ## set operators
 ### union, union all, intersect, intersect all, minus or except, except all
 same structure - use set operators<br>
