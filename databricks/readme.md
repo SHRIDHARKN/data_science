@@ -50,6 +50,7 @@ SELECT to_date(concat_ws("/", "10", "05", "2020"),"MM/dd/yyyy")
 select *,date_format(date,"E" ) as weekday from salesDateFormatted
 ```
 ### basic functions
+#### split string
 ```python
 df.select("name","age","geo_code",split(split(df["geo_code"],"-")[1],"_")[0].alias("location"))
 ```
