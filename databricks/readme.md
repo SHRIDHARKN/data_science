@@ -21,6 +21,9 @@ LOCATION '/mnt/training/online_retail/data-001/managed_table/'
 AS SELECT * FROM outdoorProductsRaw_external;
 
 ```
+### data types
+#### SQL
+  - Integer Data Types: TINYINT: 1 byte (8 bits), SMALLINT: 2 bytes (16 bits), MEDIUMINT: 3 bytes (24 bits), INT/INTEGER: 4 bytes (32 bits), BIGINT: 8 bytes (64 bits)
 ### temporary view vs view
   - view persists in the database whereas temporary view is available onyl for the duration of spark session
   - restarting session gives error
