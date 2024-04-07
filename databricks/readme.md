@@ -23,7 +23,26 @@ AS SELECT * FROM outdoorProductsRaw_external;
 ```
 ### data types
 #### SQL
-  - Integer Data Types: TINYINT: 1 byte (8 bits), SMALLINT: 2 bytes (16 bits), MEDIUMINT: 3 bytes (24 bits), INT/INTEGER: 4 bytes (32 bits), BIGINT: 8 bytes (64 bits)
+`Integer Data Types`:
+  - TINYINT: 1 byte (8 bits)
+  - SMALLINT: 2 bytes (16 bits)
+  - MEDIUMINT: 3 bytes (24 bits)
+  - INT/INTEGER: 4 bytes (32 bits)
+  - BIGINT: 8 bytes (64 bits)
+
+`Floating-Point Data Types:`:
+  - FLOAT: 4 bytes (single precision)
+  - DOUBLE: 8 bytes (double precision)
+
+#### SPARK
+  - ByteType: 1-byte signed integer.
+  - ShortType: 2-byte signed integer.
+  - IntegerType: 4-byte signed integer.
+  - LongType: 8-byte signed integer.
+  - FloatType: 4-byte single-precision floating-point number.
+  - DoubleType: 8-byte double-precision floating-point number.
+  - DecimalType: Arbitrary-precision signed decimal.
+
 ### temporary view vs view
   - view persists in the database whereas temporary view is available onyl for the duration of spark session
   - restarting session gives error
