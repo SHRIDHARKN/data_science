@@ -22,7 +22,12 @@ def get_value_counts(df,col_name,asc=False):
   value_counts_df = df.groupBy(col_name).count().orderBy("count", ascending=asc)
   display(value_counts_df)
 ```
-
+### crosstab
+```python
+def generate_crosstab(df,col_axis,row_axis):
+    crosstab_df = df.groupBy(col_axis).pivot(row_axis).count()
+    display(crosstab_df)
+```
 
     
 #### split string
