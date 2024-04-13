@@ -1,6 +1,12 @@
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/aa710bbe-b961-4d7c-9476-24097ea91aec)
 
 ### basic functions
+#### item value counts in a col
+```python
+def get_value_counts(df,col_name,asc=False):
+  value_counts_df = df.groupBy(col_name).count().orderBy("count", ascending=asc)
+  display(value_counts_df)
+```    
 #### split string
 ```python
 df.select("name","age","geo_code",split(split(df["geo_code"],"-")[1],"_")[0].alias("location"))
