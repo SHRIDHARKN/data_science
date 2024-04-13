@@ -1,6 +1,15 @@
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/aa710bbe-b961-4d7c-9476-24097ea91aec)
 
 ## basic data exploration tools
+### count nan and nulls
+```python
+def count_nan_and_nulls(df):
+    nan_null_counts = df.select([
+        count(when(isnan(c) | col(c).isNull(), c)).alias(c) 
+        for c in df.columns
+    ])
+    display(nan_null_counts)
+```
 ### null value counts in all cols
 ```python
 def get_null_counts(df):
