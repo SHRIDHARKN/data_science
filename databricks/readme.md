@@ -1,6 +1,12 @@
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/aa710bbe-b961-4d7c-9476-24097ea91aec)
 
 ## basic data exploration tools
+### null value counts in all cols
+```python
+def get_null_counts(df):
+    null_counts = df.select([count(when(col(c).isNull(), c)).alias(c) for c in df.columns])
+    display(null_counts)
+```
 ### item value counts in a col
 ```python
 def get_value_counts(df,col_name,asc=False):
