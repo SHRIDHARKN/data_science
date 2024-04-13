@@ -28,14 +28,22 @@ def generate_crosstab(df,col_axis,row_axis):
     crosstab_df = df.groupBy(col_axis).pivot(row_axis).count()
     display(crosstab_df)
 ```
-### save as csv
+### save csv
 ```python
 def save_df_as_csv(df,file_name,folder_name="my_files",header="true"):
     
-    dbfs_path = f"/dbfs/{folder_name}/{file_name}"
-    df.coalesce(1).write.option("header", header).csv(dbfs_path)
+    save_path = f"/dbfs/{folder_name}/{file_name}"
+    df.coalesce(1).write.option("header", header).csv(save_path)
 ```
+### load csv
+```python
+def load_csv(file_name,folder_name="my_files",header="true"):
     
+    save_path = f"/dbfs/{folder_name}/{file_name}"
+    df = spark.read.option("header", header).csv(save_path)
+    return df
+```
+
 #### split string
 ```python
 df.select("name","age","geo_code",split(split(df["geo_code"],"-")[1],"_")[0].alias("location"))
