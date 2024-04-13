@@ -28,7 +28,13 @@ def generate_crosstab(df,col_axis,row_axis):
     crosstab_df = df.groupBy(col_axis).pivot(row_axis).count()
     display(crosstab_df)
 ```
-
+### save as csv
+```python
+def save_df_as_csv(df,file_name,folder_name="my_files",header="true"):
+    
+    dbfs_path = f"/dbfs/{folder_name}/{file_name}"
+    df.coalesce(1).write.option("header", header).csv(dbfs_path)
+```
     
 #### split string
 ```python
