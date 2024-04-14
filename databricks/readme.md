@@ -43,6 +43,14 @@ def load_csv(file_name,folder_name="my_files",header="true"):
     df = spark.read.option("header", header).csv(save_path)
     return df
 ```
+### join dfs
+```python
+def join_dfs(df_left,df_right,join_columns,how="inner"):
+
+    joined_df = df_left.join(df_right, on=join_columns,how=how)
+    display(joined_df)
+    return joined_df
+```
 
 #### split string
 ```python
