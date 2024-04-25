@@ -11,7 +11,7 @@ mkdirs /dbfs/my_Files
 %fs
 ls /dbfs/my_Files/
 ```
-###
+### remove the file stored as csv/excel
 ```
 %fs
 rm -r /dbfs/my_Files/example.csv
