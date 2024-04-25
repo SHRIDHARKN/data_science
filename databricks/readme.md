@@ -1,6 +1,21 @@
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/aa710bbe-b961-4d7c-9476-24097ea91aec)
 
 ## basic data exploration tools
+### make a directory
+```
+%fs 
+mkdirs /dbfs/my_Files
+```
+### list the contents
+```
+%fs
+ls /dbfs/my_Files/
+```
+###
+```
+%fs
+rm -r /dbfs/my_Files/example.csv
+```
 ### count nan and nulls
 ```python
 def count_nan_and_nulls(df):
