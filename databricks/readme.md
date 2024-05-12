@@ -1,7 +1,7 @@
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/aa710bbe-b961-4d7c-9476-24097ea91aec)
 
 ## create a table and insert/ update values
-```
+```python
 data = [("John", 30), ("Alice", 35), ("Bob", 40)]
 df1 = spark.createDataFrame(data, ["name", "age"])
 df1.write.saveAsTable("default.my_table", mode="overwrite")
