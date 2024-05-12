@@ -1,6 +1,43 @@
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/aa710bbe-b961-4d7c-9476-24097ea91aec)
 
 ## basic data exploration tools
+### create a table and insert/ update values
+```python
+data = [("John", 30), ("Alice", 35), ("Bob", 40)]
+df1 = spark.createDataFrame(data, ["name", "age"])
+df1.write.saveAsTable("default.my_table", mode="overwrite")
+```
+![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/3dff3a9c-b24b-456c-a992-5c82432183c2)
+
+### overwrite the values in table created above
+```python
+data2 = [("Alice", 45), ("Bob", 40), ("Eve", 45)]
+df2 = spark.createDataFrame(data2, ["name", "age"])
+df2.write.saveAsTable("default.my_table", mode="overwrite")
+```
+![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/f3b21a0d-21e3-4d4e-8778-f275ff4c93b1)
+
+### insert values or update with latest values
+```python
+data = [("John", 30), ("Alice", 35), ("Bob", 40)]
+df1 = spark.createDataFrame(data, ["name", "age"])
+df1.write.saveAsTable("default.my_table", mode="overwrite")
+data2 = [("Alice", 45), ("Bob", 40), ("Eve", 45)]
+df2 = spark.createDataFrame(data2, ["name", "age"])
+df2.createOrReplaceTempView("df2_temp_view")
+```
+```python
+spark.sql("""
+    MERGE INTO default.my_table AS target
+    USING df2_temp_view AS source
+    ON target.name = source.name
+    WHEN MATCHED THEN UPDATE SET target.age = source.age
+    WHEN NOT MATCHED THEN INSERT (name, age) VALUES (source.name, source.age)
+""")
+```
+
+
+
 ### make a directory
 ```
 %fs 
