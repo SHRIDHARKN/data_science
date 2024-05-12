@@ -35,6 +35,7 @@ spark.sql("""
     WHEN NOT MATCHED THEN INSERT (name, age) VALUES (source.name, source.age)
 """)
 ```
+![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/638f1c4c-6e56-449f-9ab6-19fb020311c7)
 
 
 
