@@ -16,7 +16,7 @@
   - each outcome is independent of one another
   - probability of outcome remains the same 
 ## Distance metrics comparison
-- eucledian : $\sqrt{|\Delta x|^2+|\Delta y|^2+|\Delta z|^2}$
+- eucledian : $\sqrt{|\Delta x|^2$+$|\Delta y|^2+|\Delta z|^2}$
   - needs normalisation
   - not suitable for higher dimensions
 - manhattan : $|\Delta x|$+$|\Delta y|$+$|\Delta z|$
