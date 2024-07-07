@@ -3,6 +3,20 @@
 ```python
 curl https://airflow.apache.org/docs/apache-airflow/2.9.2/docker-compose.yaml -o docker-compose.yaml
 ```
+## run the following commands
+```python
+mkdir dags
+```
+```python
+mkdir logs
+```
+```python
+mkdir plugins
+```
+```python
+docker compose up airflow-init
+```
+
 
 **install apache airflow**
 ```
@@ -10,16 +24,12 @@ curl 'https://airflow.apache.org/docs/apache-airflow/2.6.2/docker-compose.yaml' 
 ```
 **paste the following commands to make required directories**
 ```
-mkdir dags
-mkdir logs
-mkdir plugins
 ```
 **_create a .dockerignore file and mention .git in it_**<br>
 _this is to ignore downloading large files and avoid running into endless docker image building process_<br>
 <br>
 **build the docker image**
 ```
-docker compose up airflow-init
 ```
 **start airflow services**
 * start the docker 
