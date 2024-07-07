@@ -1,4 +1,4 @@
-![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/9a12d731-9225-45d9-9ec3-73746c3549d2)
+![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/a8b1a078-8ddb-4f34-b7b7-fb7124f33f2e)
 
 ## docker
 - container package of application with necessary dependencies
