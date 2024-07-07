@@ -3,7 +3,7 @@
 - ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/862c09a9-f58c-4d89-beb7-5a59cd031f9f)
 - download .exe file from offical website 
 - `wsl --set-default-version 2` - use this is wsl --status shows version as 1. Docker needs wsl 2
-- 
+- collection of related images - repository. Centralised location of images is registry.
 
 
 ## build docker file <br>
