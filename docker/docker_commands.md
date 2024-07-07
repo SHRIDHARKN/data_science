@@ -12,6 +12,19 @@
 ```python
 docker -v
 ```
+## check the running docker containers
+```
+docker ps
+```
+```
+## build docker image <br>
+```
+docker build -t simple-python-app .
+```
+## list docker images <br>
+```
+docker images
+```
 ## build docker file <br>
 ```
 # Use the official Python image as the base image
@@ -25,19 +38,6 @@ COPY . /app
 
 # Run the Python script when the container launches
 CMD ["python", "app.py"]
-```
-## build docker image <br>
-```
-docker build -t simple-python-app .
-```
-## list docker images <br>
-```
-docker images
-```
-## check the running docker containers
-```
-docker ps
-```
 ## see all containers, including the ones that are not running
 ```
 docker ps -a
