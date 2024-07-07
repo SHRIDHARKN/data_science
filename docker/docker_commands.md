@@ -4,7 +4,8 @@
 - download .exe file from offical website 
 - `wsl --set-default-version 2` - use this is wsl --status shows version as 1. Docker needs wsl 2
 - collection of related images - repository. Centralised location of images is registry.
-- Docker - docker engine commmunicates through docker engine the apps and host OS. In VMs , app and OS kernel both needs to be setup. Hence more resources relatively.
+- Docker - docker engine commmunicates through docker engine the apps and host OS. In VMs , app and OS kernel both needs to be setup. Hence more resources relatively. Virtualization of app only in docker.
+- Docker compatibility wit windows <10
 
 ## commands
 ## check the docker version installed
