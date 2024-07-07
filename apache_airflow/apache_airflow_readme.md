@@ -1,4 +1,9 @@
-# _apache airflow_
+# apache airflow
+## create docker compose file for airflow
+```python
+curl https://airflow.apache.org/docs/apache-airflow/2.9.2/docker-compose.yaml -o airflow-docker-compose.yaml
+```
+
 **install apache airflow**
 ```
 curl 'https://airflow.apache.org/docs/apache-airflow/2.6.2/docker-compose.yaml' -o 'docker-compose.yaml'
