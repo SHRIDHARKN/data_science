@@ -1,4 +1,5 @@
-![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/7ce30c09-0538-440b-81f8-641ea77fb3b0)
+![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/5086efda-cdf4-4334-928d-5513ffca3cf4)
+
 
 # apache airflow
 ## create docker compose file for airflow
