@@ -2,7 +2,7 @@
 # Codes 
 download images in a folder from saegmaker
 ```python
-tar -czvf <folder_name>.zip <path to folder>
+tar -czvf <folder_name>.tar.gz <path to folder>
 ```
 ### read images 
 ```python
