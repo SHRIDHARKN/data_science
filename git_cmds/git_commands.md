@@ -29,6 +29,10 @@ git log
 ```
 git revert <COMMIT_ID>
 ```
+** abort merge
+```python
+git merge --abort
+```
 **E325: ATTENTION Found a swap file by the name ".git/.COMMIT_EDITMSG.swp"** 
 ```
 rm .git/.COMMIT_EDITMSG.swp
