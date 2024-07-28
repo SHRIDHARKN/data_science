@@ -29,7 +29,7 @@ git log
 ```
 git revert <COMMIT_ID>
 ```
-** abort merge
+**abort merge**
 ```python
 git merge --abort
 ```
