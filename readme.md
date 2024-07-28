@@ -16,19 +16,19 @@
 **6. llm-quantisation [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/quantization-memory-footprint.ipynb)**<br>
 **7  sentiment-classification-neural-networks  [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/text_classification/emotion%20classification.ipynb)**<br>
 ## generative ai
- - stable diffusion from scratch (text to image) = [link](https://github.com/SHRIDHARKN/data_science/blob/main/generative_ai/text_2_image_stable_diffusion.ipynb)
+**1. stable diffusion from scratch (text to image) = [link](https://github.com/SHRIDHARKN/data_science/blob/main/generative_ai/text_2_image_stable_diffusion.ipynb)
    ![ezgif com-resize](https://github.com/user-attachments/assets/d84036ec-b76b-44e9-b0a6-e2b5c71db17d)
 
- - stable diffusion from scratch (unconditional) - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/generative_ai/stable-diffusion-mini.ipynb)**<br>
+**2. stable diffusion from scratch (unconditional) - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/generative_ai/stable-diffusion-mini.ipynb)**<br>
 ![ezgif com-animated-gif-maker](https://github.com/SHRIDHARKN/data_science/assets/74343939/17988cb2-83b9-4720-abe6-f0d7273ffcdd)
 
-**2. langchain-chromadb-semantic-search -[link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/semantic_search.ipynb)**<br>
-**3. llm-multiple-files-chat-langchain-chromadb -[link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/document_based_qa_langchain.ipynb)**<br>
-**4. text to sql - google-palm langchain-chromadb-few-shot-learn - [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/text2llm_fewshotlearn.ipynb)**<br>
-**5. llama 2 7b finetune (mental health counseling chatbot) [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/llama_mental_health.ipynb)**<br>      
-**6. conditional generative adverserial networks CGans - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/conditional_gans/conditional_gans_mnist.ipynb)**<br>
+**3. langchain-chromadb-semantic-search -[link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/semantic_search.ipynb)**<br>
+**4. llm-multiple-files-chat-langchain-chromadb -[link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/document_based_qa_langchain.ipynb)**<br>
+**5. text to sql - google-palm langchain-chromadb-few-shot-learn - [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/text2llm_fewshotlearn.ipynb)**<br>
+**6. llama 2 7b finetune (mental health counseling chatbot) [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/llama_mental_health.ipynb)**<br>      
+**7. conditional generative adverserial networks CGans - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/conditional_gans/conditional_gans_mnist.ipynb)**<br>
 ![ezgif com-resize](https://github.com/SHRIDHARKN/data_science/assets/74343939/9655f786-f130-46ca-b623-01be9702975e)**<br>
-**7. anime character generation using DCGAN - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/generative_ai/anime_char_generator/generate-anime-DCGAN.ipynb)**<br>
+**8. anime character generation using DCGAN - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/generative_ai/anime_char_generator/generate-anime-DCGAN.ipynb)**<br>
       ![ezgif com-resize](https://github.com/SHRIDHARKN/data_science/assets/74343939/36d23434-d570-460b-a814-4bcbc49b5831)**<br>
 
       
