@@ -16,7 +16,7 @@
 **6. llm-quantisation [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/quantization-memory-footprint.ipynb)**<br>
 **7  sentiment-classification-neural-networks  [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/text_classification/emotion%20classification.ipynb)**<br>
 ## generative ai
-**1. stable diffusion from scratch (text to image) = [link](https://github.com/SHRIDHARKN/data_science/blob/main/generative_ai/text_2_image_stable_diffusion.ipynb)
+**1. stable diffusion from scratch (text to image) = [link](https://github.com/SHRIDHARKN/data_science/blob/main/generative_ai/text_2_image_stable_diffusion.ipynb)**<br>
    ![ezgif com-resize](https://github.com/user-attachments/assets/d84036ec-b76b-44e9-b0a6-e2b5c71db17d)
 
 **2. stable diffusion from scratch (unconditional) - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/generative_ai/stable-diffusion-mini.ipynb)**<br>
