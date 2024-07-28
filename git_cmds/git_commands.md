@@ -7,6 +7,12 @@ git branches
 ```
 git checkout -b <BRANCH_NAME>
 ```
+**change the name of the branch**
+```
+git branch -m <old-name> <new-name>
+```
+
+
 **switch branch**
 ```
 git checkout main
