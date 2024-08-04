@@ -1,6 +1,7 @@
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/aa710bbe-b961-4d7c-9476-24097ea91aec)
 
 # Basic data operations
+## rolling average
 ```python
 from pyspark.sql.window import Window
 import pyspark.sql.functions as F
@@ -18,6 +19,7 @@ def cal_roll_avg(df=None,col_name=None,window_spec=None,roll_avg_col_name=None,h
     df = df.withColumn(roll_avg_col_name, F.avg(F.col(col_name)).over(window_spec))
     return df
 ```
+## cumulative sum
 ```python
 from pyspark.sql.window import Window
 import pyspark.sql.functions as F
