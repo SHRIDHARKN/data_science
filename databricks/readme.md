@@ -1,6 +1,6 @@
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/aa710bbe-b961-4d7c-9476-24097ea91aec)
 # Index
-
+Rolling average - []
 # Basic data operations
 ## rolling average
 ```python
