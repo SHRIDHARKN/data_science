@@ -1,8 +1,8 @@
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/aa710bbe-b961-4d7c-9476-24097ea91aec)
 # Index
-|Topic|Link|
-------------
-|Rolling average | [Link](https://github.com/SHRIDHARKN/data_science/blob/main/databricks/readme.md#rolling-average)|
+| Topic          | Link                                                                                                       |
+|----------------|------------------------------------------------------------------------------------------------------------|
+| Rolling average | [Link](https://github.com/SHRIDHARKN/data_science/blob/main/databricks/readme.md#rolling-average) |
 
 # Basic data operations
 ## rolling average
