@@ -3,6 +3,7 @@
 | Topic          | Link                                                                                                       |
 |----------------|------------------------------------------------------------------------------------------------------------|
 | Rolling average | [Link](https://github.com/SHRIDHARKN/data_science/blob/main/databricks/readme.md#rolling-average) |
+| Cumulative sum | [Link](https://github.com/SHRIDHARKN/data_science/blob/main/databricks/readme.md#cumulative-sum) |
 
 # Basic data operations
 ## rolling average
