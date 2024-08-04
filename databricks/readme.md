@@ -1,5 +1,41 @@
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/aa710bbe-b961-4d7c-9476-24097ea91aec)
 
+# Basic data operations
+```python
+from pyspark.sql.window import Window
+import pyspark.sql.functions as F
+
+def cal_roll_avg(df=None,col_name=None,window_spec=None,roll_avg_col_name=None,help_=None):
+    if help_:
+        print("""
+            df : dataframe
+            col_name : name of the column for rolling avg
+            window_spec : specify window over which rolling avg needs to be done
+            roll_avg_col_name : specify the name you want for the rolling avg column
+            """)
+    if not roll_avg_col_name:
+        roll_avg_col_name=f"rolling_avg_{col_name}"
+    df = df.withColumn(roll_avg_col_name, F.avg(F.col(col_name)).over(window_spec))
+    return df
+```
+```python
+from pyspark.sql.window import Window
+import pyspark.sql.functions as F
+
+def cal_cumsum(df,col_name,window_spec,cumsum_col_name=None,help_=None):
+    if help_:
+        return """
+            df : dataframe
+            col_name : name of the column for cumulative sum
+            window_spec : specify window over which cumulative sum needs to be done
+            cumsum_col_name : specify the name you want for the cumulative sum column
+            """
+    
+    if not cumsum_col_name:
+        cumsum_col_name=f"cumsum_{col_name}"
+    df = df.withColumn(cumsum_col_name, F.sum(F.col(col_name)).over(window_spec))
+    return df
+```
 ## create a table and insert/ update values
 ```python
 data = [("John", 30), ("Alice", 35), ("Bob", 40)]
