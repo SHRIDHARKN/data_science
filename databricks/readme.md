@@ -2,7 +2,7 @@
 # Index
 |Topic|Link|
 ------------
-|Rolling average|[Link](https://github.com/SHRIDHARKN/data_science/blob/main/databricks/readme.md#rolling-average)|
+|Rolling average | [Link](https://github.com/SHRIDHARKN/data_science/blob/main/databricks/readme.md#rolling-average)|
 
 # Basic data operations
 ## rolling average
