@@ -6,8 +6,8 @@
 import torch
 
 def get_gpu_memory():
-    """Get the current GPU memory usage in GB, rounded to 2 decimal places."""
-    if torch.cuda.is_available():
+
+if torch.cuda.is_available():
         print('Cuda available')
         total_memory = torch.cuda.get_device_properties(0).total_memory
         used_memory = torch.cuda.memory_allocated(0)
