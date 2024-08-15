@@ -1,14 +1,26 @@
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/33871c2e-d40c-4263-bbe7-5479bc8eec07)
 # How to create an environment in conda?
 ## Step 1:
-```python
-conda create -n vlm_env python=3.11 --y
+```
+Generate a requirements.txt file.
+Refer to - [Link](https://github.com/SHRIDHARKN/data_science/blob/main/requirements.md#llm-env-requirements)
 ```
 ## Step 2:
 ```python
+conda create -n vlm_env python=3.11 --y
+```
+## Step 3:
+```python
+pip install <requirements.txt>
+```
+## Step 4:
+```python
 conda activate vlm_env
 ```
-
+## Step 5:
+```python
+python -c "import torch; print(torch.cuda.device_count())"
+```
 # conda commands
 **show environment names**<br>
 ```python
