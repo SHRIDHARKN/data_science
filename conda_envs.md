@@ -1,4 +1,14 @@
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/33871c2e-d40c-4263-bbe7-5479bc8eec07)
+# How to create an environment in conda?
+## Step 1:
+```python
+conda create -n vlm_env python=3.11 --y
+```
+## Step 2:
+```python
+conda activate vlm_env
+```
+
 # conda commands
 **show environment names**<br>
 ```python
