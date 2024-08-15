@@ -5,7 +5,7 @@
 **poly kernel**<br>
 - m = number of rows, n = number of columns, [m X n].[n X m]<br>
 - [5x3].[3X5] - dot product of the dataframe with 3 features with same dataframe transposed.<br>
-- K(x,y) = $(\gamma.x.y+c)^d$ <> K($x$,$x$) = $(\gamma.x.x^T+c)^d$<br>
+- K(x,y) = $(\gamma.x.y+c)^d$ <> K($x$,${x}$) = $(\gamma.x.x^T+c)^d$<br>
 - gamma = $\gamma$ degree = d  coef0=c<br>
 
 **rbf kernel**<br>
