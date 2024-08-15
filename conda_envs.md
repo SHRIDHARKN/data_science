@@ -4,7 +4,7 @@
 Reference - [Link](https://github.com/SHRIDHARKN/data_science/blob/main/requirements.md#llm-env-requirements)
 ## Step 2: Conda create an env
 ```python
-conda create -n vlm_env python=3.11 --y
+conda create -n <env_name> python=3.11 --y
 ```
 ## Step 3: Install the requirements
 ```python
@@ -12,7 +12,7 @@ pip install <requirements.txt>
 ```
 ## Step 4: Activate the env
 ```python
-conda activate vlm_env
+conda activate <env_name>
 ```
 ## Step 5: Check gpu availability (optional)
 ```python
