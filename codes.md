@@ -41,4 +41,12 @@ from transformers import AutoModelForCausalLM,AutoTokenizer
 model = AutoModelForCausalLM.from_pretrained("tinyllama-sqllm-v1/checkpoint-500")
 tokenizer = AutoTokenizer.from_pretrained("tinyllama-sqllm-v1/checkpoint-500")
 ```
+## generate requirements file from py libraries info 
+Pass the string with py librabries info to the function along with name of the requirements file
+```python
+def write_libraries_to_file(libraries_string, filename):
+  with open(filename, "w") as file:
+    file.write(libraries_string)
+```
+
 
