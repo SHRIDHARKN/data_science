@@ -1,10 +1,10 @@
 ## xgboost classifier
 * **colsample_bytree** <br>
--  Example: Suppose you have features [A, B, C, D, E, F, G, H, I, J]. If colsample_bytree=0.5, XGBoost might randomly pick [A, C, E, G, H] to build one tree and [B, D, F, I, J] to build another.<br>
+  -  Example: Suppose you have features [A, B, C, D, E, F, G, H, I, J]. If colsample_bytree=0.5, XGBoost might randomly pick [A, C, E, G, H] to build one tree and [B, D, F, I, J] to build another.<br>
 * **colsample_bylevel** <br>
-- Example: If your features are [A, B, C, D, E, F, G, H, I, J], and colsample_bylevel=0.7, XGBoost might choose [A, C, F, G, H, I, J] for one level and [B, D, E, F, G, H, I] for the next.<br>
+  - Example: If your features are [A, B, C, D, E, F, G, H, I, J], and colsample_bylevel=0.7, XGBoost might choose [A, C, F, G, H, I, J] for one level and [B, D, E, F, G, H, I] for the next.<br>
 * **colsample_bynode** <br>
-- Example: For a node deciding on a split, if there are 10 features and colsample_bynode=0.5, XGBoost might choose to consider only 5 features like [A, D, F, G, J] for that particular split. The next node might use a different set of features like [B, C, E, H, I].<br>
+  - Example: For a node deciding on a split, if there are 10 features and colsample_bynode=0.5, XGBoost might choose to consider only 5 features like [A, D, F, G, J] for that particular split. The next node might use a different set of features like [B, C, E, H, I].<br>
 
 ## data transformation
 * **Right-Skewed Data:** **Logarithmic** and **square root** transformations are often appropriate.
