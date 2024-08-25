@@ -18,6 +18,11 @@ conda activate <env_name>
 ```python
 python -c "import torch; print(torch.cuda.device_count())"
 ```
+## Step 6: create kernel for the env 
+```python
+python -m ipykernel install --user --name <environemnt name> --display-name "<display name>"
+```
+
 # conda commands
 **show environment names**<br>
 ```python
@@ -53,9 +58,6 @@ conda activate env
 ```
 ```python
 pip install ipykernel
-```
-```python
-python -m ipykernel install --user --name <environemnt name> --display-name "<display name>"
 ```
 
 **create a env in D drive**
