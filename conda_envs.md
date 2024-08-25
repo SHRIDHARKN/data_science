@@ -1,24 +1,24 @@
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/33871c2e-d40c-4263-bbe7-5479bc8eec07)
 # How to create an environment in conda?
-## Step 1: Generate a requirements.txt file
+### Step 1: Generate a requirements.txt file
 Reference - [Link](https://github.com/SHRIDHARKN/data_science/blob/main/requirements.md#llm-env-requirements)
-## Step 2: Conda create an env
+### Step 2: Conda create an env
 ```python
 conda create -n <env_name> python=3.11 --y
 ```
-## Step 3: Install the requirements
+### Step 3: Install the requirements
 ```python
 pip install <requirements.txt>
 ```
-## Step 4: Activate the env
+### Step 4: Activate the env
 ```python
 conda activate <env_name>
 ```
-## Step 5: Check gpu availability (optional)
+### Step 5: Check gpu availability (optional)
 ```python
 python -c "import torch; print(torch.cuda.device_count())"
 ```
-## Step 6: create kernel for the env 
+### Step 6: create kernel for the env 
 ```python
 python -m ipykernel install --user --name <environemnt name> --display-name "<display name>"
 ```
