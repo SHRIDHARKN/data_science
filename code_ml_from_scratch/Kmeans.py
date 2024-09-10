@@ -39,15 +39,6 @@ class KMeans:
         distances = [euclidean_distance(centroids_old[i], centroids[i]) for i in range(self.K)]
         return sum(distances) <= self.tolerance
     
-    def _get_cluster_labels(self, clusters):
-        # each sample will get the label of the cluster it was assigned to
-        labels = np.empty(self.n_samples)
-        for cluster_idx, cluster in enumerate(clusters):
-           for sample_idx in cluster:
-               labels[sample_idx] = cluster_idx
-
-        return labels
-
     def fit(self,X):
         self.X = X
         self.n_samples, self.n_features = self.X.shape
