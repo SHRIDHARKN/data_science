@@ -7,8 +7,8 @@
   - Example: For a node deciding on a split, if there are 10 features for a **level** and colsample_bynode=0.5, XGBoost might choose to consider only 5 features like [A, D, F, G, J] for that particular split. The next node might use a different set of features like [B, C, E, H, I].<br>
 
 ## data transformation
-* **Right-Skewed Data:** **Logarithmic** and **square root** transformations are often appropriate.
-* **Left-Skewed Data:** : mean<median<mode **Exponential** and **reciprocal** transformations may be useful.
+* **Right-Skewed Data:** 
+* **Left-Skewed Data:** : mean<median<mode - log, sqrt, cube root to make it normal
 ## entropy
 $$Entropy = - \sum_{i=1}^{n} **p** \ log(**p**)$$
 ## logistic regression derivation
