@@ -16,6 +16,13 @@
 **6. llm-quantisation [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/quantization-memory-footprint.ipynb)**<br>
 **7  sentiment-classification-neural-networks  [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/text_classification/emotion%20classification.ipynb)**<br>
 ## generative ai
+### Diffusions models
+- text to image stable diffusion from scratch = [link](https://github.com/SHRIDHARKN/data_science/blob/main/generative_ai/text_2_image_stable_diffusion.ipynb)**<br>
+   ![ezgif com-resize](https://github.com/user-attachments/assets/d84036ec-b76b-44e9-b0a6-e2b5c71db17d)
+- stable diffusion from scratch (unconditional) - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/generative_ai/stable-diffusion-mini.ipynb)**<br>
+![ezgif com-animated-gif-maker](https://github.com/SHRIDHARKN/data_science/assets/74343939/17988cb2-83b9-4720-abe6-f0d7273ffcdd)
+
+
 **1. text to image stable diffusion from scratch = [link](https://github.com/SHRIDHARKN/data_science/blob/main/generative_ai/text_2_image_stable_diffusion.ipynb)**<br>
    ![ezgif com-resize](https://github.com/user-attachments/assets/d84036ec-b76b-44e9-b0a6-e2b5c71db17d)
 
@@ -31,7 +38,8 @@
 **8. anime character generation using DCGAN - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/generative_ai/anime_char_generator/generate-anime-DCGAN.ipynb)**<br>
       ![ezgif com-resize](https://github.com/SHRIDHARKN/data_science/assets/74343939/36d23434-d570-460b-a814-4bcbc49b5831)**<br>
 
-      
+### LLMs
+ -Llama2-Langchain-RAG-QA [link](https://github.com/SHRIDHARKN/data_science/blob/main/projects/generative-ai/llama2-rag-qa.ipynb)
 
 ## machine learning
 ### code machine learning algorithms from scratch
