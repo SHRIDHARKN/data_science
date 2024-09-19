@@ -17,9 +17,9 @@
 **7  sentiment-classification-neural-networks  [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/text_classification/emotion%20classification.ipynb)**<br>
 ## generative ai
 ### Diffusions models
-- text to image stable diffusion from scratch = [link](https://github.com/SHRIDHARKN/data_science/blob/main/generative_ai/text_2_image_stable_diffusion.ipynb)**<br>
+- text to image stable diffusion from scratch = **[link](https://github.com/SHRIDHARKN/data_science/blob/main/generative_ai/text_2_image_stable_diffusion.ipynb)**<br>
    ![ezgif com-resize](https://github.com/user-attachments/assets/d84036ec-b76b-44e9-b0a6-e2b5c71db17d)
-- stable diffusion from scratch (unconditional) - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/generative_ai/stable-diffusion-mini.ipynb)**<br>
+- stable diffusion from scratch (unconditional) - **[link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/generative_ai/stable-diffusion-mini.ipynb)**<br>
 ![ezgif com-animated-gif-maker](https://github.com/SHRIDHARKN/data_science/assets/74343939/17988cb2-83b9-4720-abe6-f0d7273ffcdd)
 
 
