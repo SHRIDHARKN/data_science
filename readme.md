@@ -8,13 +8,13 @@
        - **fashion_image_search - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/image_search_engine)**<br>       
 
 ## nlp
-**1. text-classification-random-forest-classifier [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/text_classification/Text_Classification_Random_Forest_Classifier.ipynb)**<br>
-**2. text-classification-BERT [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/bert/Text%20Classification%20Using%20BERT.ipynb)**<br>
-**3. BERT-embeddings-and-sklearn-classifiers [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/bert/Text_classification_using_BERT_embeddings_and_sklearn_classifiers.ipynb)**<br>
-**4. candidate-resume-tagging-word2vec-skipgram [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/candidate_n_resume_tagging/candidate_n_resume_tagging_from_job_description.ipynb)**<br>
-**5. gpt2-finetuned-customer-support-chatbot [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/gpt2_finetune_cust_supp.ipynb)**<br>
-**6. llm-quantisation [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/quantization-memory-footprint.ipynb)**<br>
-**7  sentiment-classification-neural-networks  [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/text_classification/emotion%20classification.ipynb)**<br>
+1. text-classification-random-forest-classifier [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/text_classification/Text_Classification_Random_Forest_Classifier.ipynb)<br>
+2. text-classification-BERT [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/bert/Text%20Classification%20Using%20BERT.ipynb)<br>
+3. BERT-embeddings-and-sklearn-classifiers [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/bert/Text_classification_using_BERT_embeddings_and_sklearn_classifiers.ipynb)<br>
+4. candidate-resume-tagging-word2vec-skipgram [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/candidate_n_resume_tagging/candidate_n_resume_tagging_from_job_description.ipynb)<br>
+5. gpt2-finetuned-customer-support-chatbot [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/gpt2_finetune_cust_supp.ipynb)<br>
+6. llm-quantisation [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/quantization-memory-footprint.ipynb)<br>
+7  sentiment-classification-neural-networks  [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/text_classification/emotion%20classification.ipynb)<br>
 ## generative ai
 ### LLMs
 - Llama2-Langchain-RAG-QA **[link](https://github.com/SHRIDHARKN/data_science/blob/main/projects/generative-ai/llama2-rag-qa.ipynb)**
