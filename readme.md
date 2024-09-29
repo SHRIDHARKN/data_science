@@ -37,12 +37,11 @@
 
 ## machine learning
 ### code machine learning algorithms from scratch
-- linear regression - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/LinearRegression.py)**<br>
+- linear regression - **[link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/LinearRegression.py)**<br>
 - logistic regression - **[link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/LogisticRegression.py)**<br>
-- k nearest neighbors - regression and classification - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/KNearestNeighbors.py)**<br>
-- k means clustering - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/Kmeans.py)**<br>
-- decision tree classifier - [link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/DecisionTreeClasssifier.py)**<br>
-- gradient boost classifier**<br>
+- k nearest neighbors - regression and classification - **[link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/KNearestNeighbors.py)**<br>
+- k means clustering - **[link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/Kmeans.py)**<br>
+- decision tree classifier - **[link](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/DecisionTreeClasssifier.py)**<br>
 
 ## docker
 - docker commands [link](https://github.com/SHRIDHARKN/data_science/blob/main/docker/docker_commands.md)<br>
