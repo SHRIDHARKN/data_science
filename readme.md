@@ -13,7 +13,6 @@
 - BERT-embeddings-and-sklearn-classifiers [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/bert/Text_classification_using_BERT_embeddings_and_sklearn_classifiers.ipynb)<br>
 - candidate-resume-tagging-word2vec-skipgram [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/candidate_n_resume_tagging/candidate_n_resume_tagging_from_job_description.ipynb)<br>
 - gpt2-finetuned-customer-support-chatbot [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/gpt2_finetune_cust_supp.ipynb)<br>
-- llm-quantisation [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/quantization-memory-footprint.ipynb)<br>
 - sentiment-classification-neural-networks  [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/text_classification/emotion%20classification.ipynb)<br>
 ## generative ai
 ### LLMs
@@ -21,7 +20,9 @@
 - langchain-chromadb-semantic-search -**[link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/semantic_search.ipynb)**
 - llm-multiple-files-chat-langchain-chromadb -**[link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/document_based_qa_langchain.ipynb)**
 - text to sql - google-palm langchain-chromadb-few-shot-learn - **[link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/text2llm_fewshotlearn.ipynb)**
-- llama 2 7b finetune (mental health counseling chatbot) **[link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/llama_mental_health.ipynb)**     
+- llama 2 7b finetune (mental health counseling chatbot) **[link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/llama_mental_health.ipynb)**
+- llm-quantisation **[link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/quantization-memory-footprint.ipynb)**
+     
 
 ### Diffusions models
 - text to image stable diffusion from scratch = **[link](https://github.com/SHRIDHARKN/data_science/blob/main/generative_ai/text_2_image_stable_diffusion.ipynb)**<br>
