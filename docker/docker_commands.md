@@ -1,6 +1,8 @@
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/a8b1a078-8ddb-4f34-b7b7-fb7124f33f2e)
 
 ## docker
+- docker image - one time template to build container
+- docker container - has libraries to run the app
 - container package of application with necessary dependencies
 - download .exe file from offical website 
 - `wsl --set-default-version 2` - use this is wsl --status shows version as 1. Docker needs wsl 2
