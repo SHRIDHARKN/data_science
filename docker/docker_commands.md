@@ -19,7 +19,6 @@ docker -v
 ```
 docker ps
 ```
-```
 ## build docker image <br>
 ```
 docker build -t simple-python-app .
@@ -27,8 +26,6 @@ docker build -t simple-python-app .
 ## list docker images <br>
 ```
 docker images
-```
-## build docker file <br>
 ```
 ## stop docker
 ```python
