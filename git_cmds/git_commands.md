@@ -1,3 +1,6 @@
+# git config
+`git config --global user.email "you@example.com"` <br>
+`git config --global user.name "Your Name"`
 # git commands
 **list git branches**
 ```
