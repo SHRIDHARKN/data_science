@@ -2,7 +2,7 @@
 # Codes 
 | Topic | Link |
 |----------|----------|
-| make changes to repo    | Row 1    |
+| make changes to repo    | [link]    |
 | Row 2    | Row 2    |
 
 ### make changes to repo
