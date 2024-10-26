@@ -1,5 +1,11 @@
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/77bbf6e5-dd40-4a1a-8c8d-86f45b5bd820)
 # Codes 
+### make changes to repo
+Steps to follow - 
+- git checkout main
+- create branch from jira
+- git checkout <branch-name>
+- make changes and commit
 ### gpu memory usage
 ```python
 
