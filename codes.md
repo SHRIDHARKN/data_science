@@ -1,7 +1,8 @@
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/77bbf6e5-dd40-4a1a-8c8d-86f45b5bd820)
 # Codes 
 ### Make changes to repo
-<span style="color:red;">your text here > </span>
+This is <span style="color:blue">blue text</span> and this is <span style="color:red">red text</span>.
+
 - git checkout main
 - create branch from jira
 - git checkout <branch-name>
