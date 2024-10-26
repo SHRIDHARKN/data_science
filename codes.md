@@ -1,6 +1,11 @@
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/77bbf6e5-dd40-4a1a-8c8d-86f45b5bd820)
 # Codes 
-### Make changes to repo
+| Topic | Link |
+|----------|----------|
+| make changes to repo    | Row 1    |
+| Row 2    | Row 2    |
+
+### make changes to repo
 Steps to follow
 - git checkout main
 - create branch from jira
