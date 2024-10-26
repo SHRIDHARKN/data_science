@@ -1,8 +1,8 @@
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/77bbf6e5-dd40-4a1a-8c8d-86f45b5bd820)
 # Codes 
 ### Make changes to repo
-<span style="color:green">
-Steps to follow - 
+<span style="color:red">
+Text content
 </span>
 - git checkout main
 - create branch from jira
