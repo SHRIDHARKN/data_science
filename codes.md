@@ -2,7 +2,7 @@
 # Codes 
 | Topic | Link |
 |----------|----------|
-| make changes to repo    | [link]    |
+| make changes to repo    | [link](https://github.com/SHRIDHARKN/data_science/blob/main/codes.md#make-changes-to-repo)    |
 | Row 2    | Row 2    |
 
 ### make changes to repo
