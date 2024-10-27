@@ -3,15 +3,15 @@
 `git config --global user.name "<your name/ user name>"`
 # git commands
 ##### Stage the changes
-- ```git add .```
+```git add .```
 ##### Commit changes
-- ```git commit -m "<message>" ```
+```git commit -m "<message>" ```
 
-## **list git branches**
+#### list git branches
 ```
 git branches
 ```
-**create a new branch**
+#### create a new branch
 ```
 git checkout -b <BRANCH_NAME>
 ```
