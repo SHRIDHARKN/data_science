@@ -36,7 +36,7 @@ git merge <branch-name>
 ```
 **get commit logs/ ids**
 ```
-git log --online
+git log --oneline
 ```
 ```
 git log
