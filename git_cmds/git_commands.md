@@ -6,6 +6,7 @@ Stage the changes
 - ```git add . ```
 Commit changes
 - ```git commit -m "<message>" ```
+<br>
 **list git branches**
 ```
 git branches
