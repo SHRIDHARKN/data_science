@@ -26,6 +26,9 @@ git branch -d <BRANCH_NAME>
 ```
 **get commit logs/ ids**
 ```
+git log --online
+```
+```
 git log
 ```
 **revert changes**
