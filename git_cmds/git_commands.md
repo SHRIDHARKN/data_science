@@ -1,12 +1,13 @@
 # git config
-`git config --global user.email "you@example.com"` <br>
-`git config --global user.name "Your Name"`
+`git config --global user.email "<your email id>"` <br>
+`git config --global user.name "<your name/ user name>"`
 # git commands
 Stage the changes
-- ```git add . ```<br>
+- 'git add .'
 Commit changes
-- ```git commit -m "<message>" ```<br>
-**list git branches**
+- 'git commit -m "<message>" `<br>
+
+## **list git branches**
 ```
 git branches
 ```
