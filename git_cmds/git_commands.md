@@ -3,9 +3,9 @@
 `git config --global user.name "<your name/ user name>"`
 # git commands
 Stage the changes
-- 'git add .'
+- ```git add .```
 Commit changes
-- 'git commit -m "<message>" `<br>
+- ```git commit -m "<message>" ```
 
 ## **list git branches**
 ```
