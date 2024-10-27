@@ -2,9 +2,9 @@
 `git config --global user.email "<your email id>"` <br>
 `git config --global user.name "<your name/ user name>"`
 # git commands
-Stage the changes
+### Stage the changes
 - ```git add .```
-Commit changes
+### Commit changes
 - ```git commit -m "<message>" ```
 
 ## **list git branches**
