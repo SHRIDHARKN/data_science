@@ -3,7 +3,7 @@
 `git config --global user.name "Your Name"`
 # git commands
 Stage the changes
-- ```git add . ```
+- ```git add . ```<br>
 Commit changes
 - ```git commit -m "<message>" ```
 <br>
