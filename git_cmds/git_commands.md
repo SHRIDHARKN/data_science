@@ -24,6 +24,11 @@ git checkout main
 ```
 git branch -d <BRANCH_NAME>
 ```
+**merge branch with main**
+- checkout to main branch and enter the following commands
+```
+git merge <branch-name>
+```
 **get commit logs/ ids**
 ```
 git log --online
