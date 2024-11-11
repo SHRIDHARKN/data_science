@@ -1,3 +1,60 @@
+# setup project folders
+```python
+import os
+#_______________________________________________________________________________________________________________#
+# create project structure
+def setup_project_structure(root_dir="."):
+    
+    print("NOTE: Folders would be created @ current directory. If you wish to create the folders else where, then use root_dir=<YOUR PATH>")
+    # Define the folder structure
+    folders = [
+        "data/raw",
+        "data/interim",
+        "data/processed",
+        "notebooks",
+        "src/data",
+        "src/features",
+        "src/models",
+        "src/utils",
+        "models",
+        "reports/figures",
+        "reports/metrics",
+        "tests",
+        "configs"
+    ]
+
+    # Create the folders
+    for folder in folders:
+        os.makedirs(os.path.join(root_dir, folder), exist_ok=True)
+
+    # Define essential files in the project root
+    files = [
+        ".gitignore",
+        "README.md",
+        "requirements.txt",
+        "environment.yml",
+        "setup.py",
+        "main.py",
+        "src/__init__.py",
+        "src/data/__init__.py",
+        "src/features/__init__.py",
+        "src/models/__init__.py",
+        "src/utils/__init__.py",
+        "tests/__init__.py"
+    ]
+
+    for file in files:
+        with open(os.path.join(root_dir, file), "w") as f:
+            pass  # Creates an empty file
+
+    # Add example content to README.md
+    with open(os.path.join(root_dir, "README.md"), "w") as f:
+        f.write("# Project Name\n\nThis project is a data science project.\n\n## Folder Structure\n\n")
+
+    print(f"Folder structure created successfully in {os.path.abspath(root_dir)}!")
+#_______________________________________________________________________________________________________________#
+
+```
 ## code for data validation - pandas
 ```python
 import pandas as pd
