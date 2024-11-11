@@ -1,7 +1,6 @@
 # setup project folders
 ```python
 import os
-#_______________________________________________________________________________________________________________#
 # create project structure
 def setup_project_structure(root_dir="."):
     
@@ -52,7 +51,6 @@ def setup_project_structure(root_dir="."):
         f.write("# Project Name\n\nThis project is a data science project.\n\n## Folder Structure\n\n")
 
     print(f"Folder structure created successfully in {os.path.abspath(root_dir)}!")
-#_______________________________________________________________________________________________________________#
 
 ```
 ## code for data validation - pandas
