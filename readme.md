@@ -14,6 +14,8 @@
 - candidate-resume-tagging-word2vec-skipgram [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/candidate_n_resume_tagging/candidate_n_resume_tagging_from_job_description.ipynb)<br>
 - gpt2-finetuned-customer-support-chatbot [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/gpt2_finetune_cust_supp.ipynb)<br>
 - sentiment-classification-neural-networks  [link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/text_classification/emotion%20classification.ipynb)<br>
+- NER - using BERT - **[link](https://github.com/SHRIDHARKN/data_science/blob/main/projects/nlp/ner/medical-ner-bert.ipynb)**
+
 ## generative ai
 ### LLMs
 - Llama2-Langchain-RAG-QA **[link](https://github.com/SHRIDHARKN/data_science/blob/main/projects/generative-ai/llama2-rag-qa.ipynb)**
@@ -22,7 +24,6 @@
 - text to sql - google-palm langchain-chromadb-few-shot-learn - **[link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/text2llm_fewshotlearn.ipynb)**
 - llama 2 7b finetune (mental health counseling chatbot) **[link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/llama_mental_health.ipynb)**
 - llm-quantisation **[link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/quantization-memory-footprint.ipynb)**
-- NER - using BERT - **[link](https://github.com/SHRIDHARKN/data_science/blob/main/projects/nlp/ner/medical-ner-bert.ipynb)**
      
 
 ### Diffusions models
