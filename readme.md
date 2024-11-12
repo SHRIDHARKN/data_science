@@ -22,6 +22,7 @@
 - text to sql - google-palm langchain-chromadb-few-shot-learn - **[link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/text2llm_fewshotlearn.ipynb)**
 - llama 2 7b finetune (mental health counseling chatbot) **[link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/llama_mental_health.ipynb)**
 - llm-quantisation **[link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/quantization-memory-footprint.ipynb)**
+- NER - using BERT - **[link](https://github.com/SHRIDHARKN/data_science/blob/main/projects/nlp/ner/medical-ner-bert.ipynb)**
      
 
 ### Diffusions models
