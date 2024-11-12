@@ -1,4 +1,8 @@
-## Named Entity Recognition
+# Named Entity Recognition
+## Topics
+- spacy basic ner
+- spacy custom ner model train
+- medical ner model using BERT
 ### Install libs
 Activate the conda environment and run the following commands - <br>
 `pip install spacy==3.7.5`<br>
