@@ -112,3 +112,92 @@ def data_validation(reference_data: pd.DataFrame, target_data: pd.DataFrame, id_
     return result
 
 ```
+## BERT - classification - imbalanced class
+```python
+import torch
+from torch.utils.data import DataLoader, RandomSampler, SequentialSampler, WeightedRandomSampler
+from transformers import BertTokenizer, BertForSequenceClassification, AdamW, get_linear_schedule_with_warmup
+from datasets import load_dataset
+import numpy as np
+from sklearn.metrics import accuracy_score, precision_recall_fscore_support
+from collections import Counter
+
+# Load IMDB dataset
+dataset = load_dataset("imdb")
+
+# Initialize the tokenizer
+tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+
+# Tokenize the input data
+def tokenize_function(examples):
+    return tokenizer(examples['text'], padding='max_length', truncation=True)
+
+tokenized_datasets = dataset.map(tokenize_function, batched=True)
+
+# Convert to torch dataset
+tokenized_datasets.set_format('torch', columns=['input_ids', 'attention_mask', 'label'])
+
+# Compute class weights
+label_counts = Counter(tokenized_datasets['train']['label'].numpy())
+total_count = len(tokenized_datasets['train'])
+class_weights = {label: total_count / count for label, count in label_counts.items()}
+
+# Create WeightedRandomSampler
+weights = [class_weights[label.item()] for label in tokenized_datasets['train']['label']]
+sampler = WeightedRandomSampler(weights, num_samples=len(weights), replacement=True)
+
+# Create DataLoader
+train_loader = DataLoader(tokenized_datasets['train'], sampler=sampler, batch_size=8)
+eval_loader = DataLoader(tokenized_datasets['test'], sampler=SequentialSampler(tokenized_datasets['test']), batch_size=8)
+
+# Initialize the model
+model = BertForSequenceClassification.from_pretrained('bert-base-uncased', num_labels=2)
+
+# Define the optimizer and learning rate scheduler
+optimizer = AdamW(model.parameters(), lr=2e-5, eps=1e-8)
+total_steps = len(train_loader) * 3  # 3 epochs
+scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=0, num_training_steps=total_steps)
+
+# Training function
+def train(model, train_loader, optimizer, scheduler, device):
+    model.train()
+    total_loss = 0
+    for batch in train_loader:
+        optimizer.zero_grad()
+        inputs = {key: val.to(device) for key, val in batch.items() if key in ['input_ids', 'attention_mask']}
+        labels = batch['label'].to(device)
+        outputs = model(**inputs, labels=labels)
+        loss = outputs.loss
+        total_loss += loss.item()
+        loss.backward()
+        optimizer.step()
+        scheduler.step()
+    return total_loss / len(train_loader)
+
+# Evaluation function
+def evaluate(model, eval_loader, device):
+    model.eval()
+    preds, true_labels = [], []
+    for batch in eval_loader:
+        with torch.no_grad():
+            inputs = {key: val.to(device) for key, val in batch.items() if key in ['input_ids', 'attention_mask']}
+            labels = batch['label'].to(device)
+            outputs = model(**inputs)
+            logits = outputs.logits
+            preds.extend(torch.argmax(logits, dim=1).cpu().numpy())
+            true_labels.extend(labels.cpu().numpy())
+    acc = accuracy_score(true_labels, preds)
+    precision, recall, f1, _ = precision_recall_fscore_support(true_labels, preds, average='binary')
+    return acc, precision, recall, f1
+
+# Training loop
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model.to(device)
+
+for epoch in range(3):  # 3 epochs
+    train_loss = train(model, train_loader, optimizer, scheduler, device)
+    acc, precision, recall, f1 = evaluate(model, eval_loader, device)
+    print(f"Epoch {epoch+1}: Train Loss = {train_loss:.4f}, Accuracy = {acc:.4f}, Precision = {precision:.4f}, Recall = {recall:.4f}, F1 Score = {f1:.4f}")
+
+
+```
