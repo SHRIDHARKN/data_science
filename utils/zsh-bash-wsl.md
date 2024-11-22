@@ -1,3 +1,7 @@
+## install zsh in wsl
+```python
+sudo apt install zsh -y
+```
 ## take backup of zshrc file
 ```python
 cp ~/.zshrc.backup ~/.zshrc
