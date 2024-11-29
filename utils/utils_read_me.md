@@ -1,3 +1,38 @@
+# gen-ai-codes
+```python
+# pipeline
+
+## load libs
+from IPython.display import display, Markdown
+import requests
+from PIL import Image
+from transformers import BlipProcessor, BlipForConditionalGeneration
+
+## get img from url/ source
+def get_img_from_url(img_url):
+    return Image.open(requests.get(img_url, stream=True).raw).convert('RGB')
+
+## load model
+def load_hf_model(model_name,model_type):
+
+    info_txt = f'downloading/ loading model: {model_name} , model_type: {model_type}'
+    display(Markdown("**"+info_txt+"**"))
+    
+    if model_type=="vlm-blip":
+        processor = BlipProcessor.from_pretrained(model_name)
+        model = BlipForConditionalGeneration.from_pretrained(model_name).to("cuda")
+    
+    return model,processor    
+
+## get model output
+def get_model_output(multimodal,text,image,processor,model):
+    
+    inputs = processor(image, text, return_tensors="pt").to("cuda")
+    out = model.generate(**inputs)
+    decoded_output = processor.decode(out[0], skip_special_tokens=True)
+    return decoded_output
+
+```
 # setup project folders
 ```python
 import os
