@@ -18,5 +18,14 @@ kind --version
 ```
 ### create cluster
 ```
-kind create cluster --name <projace-name>
+kind create cluster --name <project-name>
 ```
+### list clusters
+```
+kind get clusters
+```
+### delete cluster
+```
+kind delete cluster --name <project-name>
+```
+
