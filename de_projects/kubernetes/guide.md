@@ -28,4 +28,34 @@ kind get clusters
 ```
 kind delete cluster --name <project-name>
 ```
+### check if cluster is running
+```
+kubectl cluster-info --context kind-<cluster-name>
+```
+### create a namespace
+```
+kubectl create namespace <project-name>
+```
+### list namespaces
+```
+kubectl get namespaces
+```
 
+### create a pod
+#### example - spark image base
+```
+kubectl run preprocess --image=bitnami/spark --namespace=ml-proj-1 --restart=Never
+```
+#### tensorflow image
+```
+kubectl run training --image=tensorflow/tensorflow:latest --namespace=ml-proj-1 --restart=Never
+```
+#### note: multiple pods can be created
+### list pods
+```
+kubectl get pods
+```
+### list pods in namespace
+```
+kubectl get pods --namespace=ml-proj-1
+```
