@@ -59,7 +59,7 @@ kubectl get pods
 ```
 kubectl get pods --namespace=ml-proj-1
 ```
-### {color:red}kubectl top nodes gives error: Metrics API not available{color}
+### $${\color{red}kubectl top nodes gives error: Metrics API not available}$$
 ```
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 ```
