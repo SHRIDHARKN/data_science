@@ -71,7 +71,7 @@ kubectl edit deployment metrics-server -n kube-system
 ```
 add this below args section
 ```
- - --kubelet-insecure-tls
+- --kubelet-insecure-tls
 - --kubelet-preferred-address-types=InternalIP,Hostname,ExternalIP
 ```
 ```
