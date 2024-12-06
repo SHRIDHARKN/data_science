@@ -59,3 +59,40 @@ kubectl get pods
 ```
 kubectl get pods --namespace=ml-proj-1
 ```
+### kubectl top nodes gives error: Metrics API not available
+```
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+```
+```
+kubectl get pods -n kube-system
+```
+```
+kubectl edit deployment metrics-server -n kube-system
+```
+add this below args section
+```
+ - --kubelet-insecure-tls
+- --kubelet-preferred-address-types=InternalIP,Hostname,ExternalIP
+```
+```
+kubectl rollout restart deployment metrics-server -n kube-system
+```
+```
+kubectl top nodes
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
