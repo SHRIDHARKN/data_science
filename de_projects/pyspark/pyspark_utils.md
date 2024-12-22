@@ -5,15 +5,21 @@
 mkdir /tmp/spark_temp
 sudo mount -o size=2G -t tmpfs tmpfs /tmp/spark_temp
 ```
-
-
 ---
-### starting the pyspark session
+### creating a spark session
 ```
-import findspark
-findspark.init()
 from pyspark.sql import SparkSession
-spark = SparkSession.builder.appName("pyspark").getOrCreate()
+def create_spark_session(app_name="app",num_cores=2,exec_memory="1g",driver_memory="1g",local_dir="/tmp/spark_temp"):
+    spark = SparkSession.builder \
+        .appName(app_name) \
+        .master(f"local[{num_cores}]") \
+        .config("spark.executor.memory", exec_memory) \
+        .config("spark.driver.memory", driver_memory) \
+        .config("spark.local.dir", local_dir) \
+        .getOrCreate()
+    spark.conf.set("mapreduce.fileoutputcommitter.marksuccessfuljobs", "false") # to avoid storing success files
+    return spark   
+
 ```
 
 
