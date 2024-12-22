@@ -1,4 +1,12 @@
-# Pyspark codes
+# Pyspark
+### create tmp storage and mount it
+- this is useful in case there is disk spill by executors. Executors spill the data to /tmp/spark_temp temporarily 
+```
+mkdir /tmp/spark_temp
+sudo mount -o size=2G -t tmpfs tmpfs /tmp/spark_temp
+```
+
+
 ---
 ### starting the pyspark session
 ```
@@ -7,6 +15,10 @@ findspark.init()
 from pyspark.sql import SparkSession
 spark = SparkSession.builder.appName("pyspark").getOrCreate()
 ```
+
+
+
+
 ### import libs
 ```
 from pyspark.sql.types import *
