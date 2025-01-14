@@ -10,4 +10,6 @@ docker build -t voldemort-spark-gpu .
 ```
 docker tag voldemort-spark-gpu <username>/voldemort-spark-gpu
 ```
+```
 docker push <username>/voldemort-spark-gpu
+```
