@@ -54,4 +54,8 @@ kubectl delete pod voldemort-redis-pod --namespace=voldemort-namespace
 ```
 kubectl run voldemort-redis-pod --image=redis:latest --namespace=voldemort-namespace restart=Never
 ```
+#### note 🔴
+- make sure this is checked in vscode to attach vscode to pod
+![image](https://github.com/user-attachments/assets/08877ed3-884f-4c1d-b411-23a402d06a25)
 #### __________________________________________________________________________________________
+
