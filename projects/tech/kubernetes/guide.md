@@ -1,4 +1,4 @@
-<img src="https://github.com/user-attachments/assets/42442a94-afb4-46cc-bbc7-a02e890e1e24" alt="image" width="300" height="200">
+<img src="https://github.com/user-attachments/assets/42442a94-afb4-46cc-bbc7-a02e890e1e24" alt="image" width="600" height="200">
 
 # KUBERNETES
 ```
