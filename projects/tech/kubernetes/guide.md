@@ -1,4 +1,3 @@
-<img src="https://github.com/user-attachments/assets/2503c981-521f-4a94-8f49-f4e559908015" alt="image" width="600" height="400">
 # KUBERNETES
 ```
 kubectl cluster-info
