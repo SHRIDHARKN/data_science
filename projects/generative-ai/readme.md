@@ -1,11 +1,11 @@
-# _____________________________________________________________________________________________________________
+# ____________________________________________________________________
 ## Get started with Ollama
 Run the following commands
 - ```pip install ollama```
 - ```sudo snap install ollama```
 ### Run llama 3.2
 ```ollama run llama3.2```
-# _____________________________________________________________________________________________________________
+# ____________________________________________________________________
 
 ## installing bitsandbytes
 - run `nvcc --version` to get cuda version installed. Example 11.8 then enter 118 in following command
