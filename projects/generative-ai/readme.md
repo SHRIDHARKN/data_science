@@ -1,5 +1,7 @@
 # ___________________________________________________________________
-## Get started with Ollama
+## Get started with Ollama 
+![image](https://github.com/user-attachments/assets/f9098cd3-e321-40f9-bf3b-005f50b1b463)
+
 Run the following commands
 - ```pip install ollama```
 - ```sudo snap install ollama```
