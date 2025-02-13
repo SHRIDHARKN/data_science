@@ -88,3 +88,63 @@ for label, text in parsed_dataset.take(5):  # View first 5 records
     print(f"Label: {label.numpy().decode('utf-8')}")
     print(f"Text: {text.numpy().decode('utf-8')}\n")
 
+
+# ______________________________________________
+import time
+import random
+import openai
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import col, udf
+from pyspark.sql.types import StringType
+
+# ✅ Initialize Spark with 4 workers (parallel processing)
+spark = SparkSession.builder \
+    .appName("TextSummarization") \
+    .master("local[4]") \  # 4 parallel tasks
+    .getOrCreate()
+
+# ✅ Initialize OpenAI Client (Replace with your Azure API details)
+openai.api_key = "YOUR_AZURE_OPENAI_API_KEY"
+
+# ✅ Define API Call with Rate Limit Handling
+def summarize_text(text):
+    max_retries = 5  # Number of retries before giving up
+    retry_delay = 2  # Initial wait time in seconds
+    
+    for attempt in range(max_retries):
+        try:
+            # ✅ Call Azure OpenAI API
+            response = openai.ChatCompletion.create(
+                model="gpt-4o",
+                messages=[{"role": "system", "content": "Summarize the following text in 50 words:"},
+                          {"role": "user", "content": text}],
+                max_tokens=100,
+                timeout=30  # Handle long API response times
+            )
+            return response['choices'][0]['message']['content']
+
+        except openai.error.RateLimitError:  # 🔹 Handle Rate Limit
+            wait_time = retry_delay * (2 ** attempt) + random.uniform(0, 1)  # Exponential backoff
+            print(f"Rate limit hit. Retrying in {wait_time:.2f} seconds...")
+            time.sleep(wait_time)
+
+        except Exception as e:  # 🔹 Handle Other API Errors
+            return f"Error: {str(e)}"
+    
+    return "Failed after retries."
+
+# ✅ Convert function to PySpark UDF (Runs in parallel on each worker)
+summarize_udf = udf(summarize_text, StringType())
+
+# ✅ Load Dataset (Example: 1000 Text Documents)
+texts = [("Document " + str(i) + " with sample content.") for i in range(1000)]
+df = spark.createDataFrame([(text,) for text in texts], ["text"])
+
+# ✅ Apply UDF in Parallel (Each worker sends API requests)
+df_with_summary = df.withColumn("summary", summarize_udf(col("text")))
+
+# ✅ Show Results
+df_with_summary.show(truncate=False)
+
+# ✅ Save Summarized Data
+df_with_summary.write.csv("summarized_texts.csv", header=True)
