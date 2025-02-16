@@ -52,3 +52,4 @@
  
 [![Notebook](https://img.shields.io/badge/Notebook-View-blue?style=flat&logo=Jupyter&logoColor=white)](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/DecisionTreeClasssifier.py)
 [![Notebook](https://img.shields.io/badge/Notebook-View-green?style=flat&logo=Jupyter&logoColor=white)](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/DecisionTreeClasssifier.py)
+[![Notebook](https://img.shields.io/badge/Notebook-View-blue?style=flat&logo=Jupyter&logoColor=white&color=red)](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/DecisionTreeClasssifier.py)
