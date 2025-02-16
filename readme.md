@@ -49,4 +49,5 @@
 - docker commands [link](https://github.com/SHRIDHARKN/data_science/blob/main/docker/docker_commands.md)<br>
 - ml-apps -
  boston-house-price [link](https://github.com/SHRIDHARKN/data_science/blob/main/docker/boston-hp-pred-app/project.md)<br>
-![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/45dc5bb3-6a84-4136-aa27-12138d77f544)
+ 
+[![Notebook](https://img.shields.io/badge/Notebook-View-blue?style=flat&logo=Jupyter&logoColor=white)](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/DecisionTreeClasssifier.py)
