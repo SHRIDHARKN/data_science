@@ -51,3 +51,4 @@
  boston-house-price [link](https://github.com/SHRIDHARKN/data_science/blob/main/docker/boston-hp-pred-app/project.md)<br>
  
 [![Notebook](https://img.shields.io/badge/Notebook-View-blue?style=flat&logo=Jupyter&logoColor=white)](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/DecisionTreeClasssifier.py)
+[![Notebook](https://img.shields.io/badge/Notebook-View-green?style=flat&logo=Jupyter&logoColor=white)](https://github.com/SHRIDHARKN/data_science/blob/main/code_ml_from_scratch/DecisionTreeClasssifier.py)
