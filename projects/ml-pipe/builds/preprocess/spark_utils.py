@@ -1,77 +1,63 @@
-import tensorflow as tf
+import os
+import multiprocessing
 from functools import partial
+from pyspark.sql import SparkSession
+import pyspark.sql.functions as F
+import tensorflow as tf
+import warnings
+warnings.simplefilter("ignore")
 
 # ____________________________________________________________________________________________________________________
-# code to convert spark dataframe to tf records
+# Get the number of CPU cores
+print("==============================================================================================================")
+num_cores = os.cpu_count()
+print(f"Number of CPU cores: {num_cores}")
+# Get the number of threads
+num_threads = multiprocessing.cpu_count()
+print(f"Number of threads: {num_threads}")
+print("==============================================================================================================")
 
-def write_tfrecords(partition_index, iterator, output_path,records_per_file):
-    """Writes a partition of TFRecords to multiple files with a fixed batch size."""
-    file_count = 0
-    record_count = 0
-    writer = None
+def show_msg(msg):
+    print("="*50)
+    print(msg)
+    print("="*50)
     
-    for row in iterator:
-        if record_count % records_per_file == 0:  
-            # ✅ Close old writer & open a new file every records_per_file records
-            if writer:
-                writer.close()
-            file_path = f"{output_path}/part-{partition_index}-{file_count}.tfrecord"
-            writer = tf.io.TFRecordWriter(file_path)
-            file_count += 1
-        
-        if row and "tf_record" in row and row["tf_record"] is not None:
-            writer.write(row["tf_record"])
-            record_count += 1
+def start_spark_session(app_name="app",num_cores=2,exec_memory="1g",driver_memory="1g",local_dir="/tmp/spark_temp"):
+    spark = SparkSession.builder \
+        .appName(app_name) \
+        .master(f"local[{num_cores}]") \
+        .config("spark.executor.memory", exec_memory) \
+        .config("spark.driver.memory", driver_memory) \
+        .config("spark.local.dir", local_dir) \
+        .getOrCreate()
+    #spark.conf.set("mapreduce.fileoutputcommitter.marksuccessfuljobs", "false") # to avoid storing success files
+    return spark   
 
-    if writer:
-        writer.close()  # ✅ Close last writer
-    
-    return iter([f"{file_count} files written for partition {partition_index}"])
+# _________________________PARQUET FILES____________________________________________________________________
+def save_as_parquet(df, output_path, max_records_per_file=5000):
+    show_msg(f"Saving DataFrame as Parquet files with maxRecordsPerFile = {max_records_per_file}")
+    df.write.option("maxRecordsPerFile", max_records_per_file).mode("overwrite").parquet(output_path)
+    show_msg(f"DataFrame saved as Parquet files in: {output_path}")
 
-"""
-def serialize_row(l, t):
-    feature = {
-        "label": tf.train.Feature(bytes_list=tf.train.BytesList(value=[l.encode()])),
-        "text": tf.train.Feature(bytes_list=tf.train.BytesList(value=[t.encode()])),
-    }
-    example_proto = tf.train.Example(features=tf.train.Features(feature=feature))
-    return example_proto.SerializeToString()
+# _____________________________TF RECORDS____________________________________________________________________
 
-# ✅ Register UDF for serialization
-serialize_udf = udf(lambda label, text: serialize_row(label, text), BinaryType())
+def save_as_tf_records(df,output_dir, text_col, label_col, token_col, label_encoded_col):
+    def serialize_example(row):
+        feature = {
+            "text": tf.train.Feature(bytes_list=tf.train.BytesList(value=[row[text_col].encode()])),
+            "label": tf.train.Feature(bytes_list=tf.train.BytesList(value=[row[label_col].encode()])),  # Ensure label is string
+            "tokens": tf.train.Feature(int64_list=tf.train.Int64List(value=row[token_col])) , # Use int64_list instead of bytes_list
+            "label_encoded": tf.train.Feature(int64_list=tf.train.Int64List(value=row[token_col]))  # Use int64_list instead of bytes_list
+        }
+        example = tf.train.Example(features=tf.train.Features(feature=feature))
+        return example.SerializeToString()
 
-# ✅ Add serialized TFRecords column
-df_serialized = df.withColumn("tf_record", serialize_udf(col("Label"), col("Top1")))
-
-
-write_tfrecords_with_args = partial(write_tfrecords, output_path=output_path, records_per_file=records_per_file)
-
-# ✅ Apply mapPartitionsWithIndex correctly
-df_serialized.rdd.mapPartitionsWithIndex(write_tfrecords_with_args).collect()
-
-"""
-
-# ____________________________________________________________________________________________________________________
-# code to read tf records
-
-def _parse_function(proto,feature_description):
-    return tf.io.parse_single_example(proto,feature_description)
-
-def extract_text_label(parsed_record):
-    return parsed_record["label"], parsed_record["text"]
-
-def load_tf_records(output_path,feature_description):
-    raw_dataset = tf.data.TFRecordDataset(tf.io.gfile.glob(f"{output_path}/*.tfrecord"))
-    parsed_dataset = raw_dataset.map(lambda proto: _parse_function(proto, feature_description))
-    return parsed_dataset
-
-"""
-feature_description = {
-    "label": tf.io.FixedLenFeature([], tf.string),
-    "text": tf.io.FixedLenFeature([], tf.string)
-}
-raw_dataset = tf.data.TFRecordDataset(tf.io.gfile.glob(f"{output_path}/*.tfrecord"))
-parsed_dataset = raw_dataset.map(_parse_function)
-parsed_dataset = parsed_dataset.map(extract_text_label)
-"""
-# ____________________________________________________________________________________________________________________
+    # Function to write each partition to TFRecord
+    def write_partition(index, iterator):
+        file_path = os.path.join(output_dir, f"part-{index:05d}.tfrecord")
+        with tf.io.TFRecordWriter(file_path) as writer:
+            for row in iterator:
+                writer.write(serialize_example(row))
+        return iter([])
+    df.rdd.mapPartitionsWithIndex(write_partition).collect()
+    show_msg(f"TFRecords saved @ {output_dir}")
