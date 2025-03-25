@@ -7,6 +7,9 @@ Run the following commands
 - ```sudo snap install ollama```
 ### Run llama 3.2
 ```ollama run llama3.2```
+### List ollama pulled models
+```ollama list```
+
 # ____________________________________________________________________
 
 ## installing bitsandbytes
