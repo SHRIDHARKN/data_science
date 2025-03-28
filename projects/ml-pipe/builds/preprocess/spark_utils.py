@@ -9,13 +9,11 @@ warnings.simplefilter("ignore")
 
 # ____________________________________________________________________________________________________________________
 # Get the number of CPU cores
-print("==============================================================================================================")
 num_cores = os.cpu_count()
 print(f"Number of CPU cores: {num_cores}")
 # Get the number of threads
 num_threads = multiprocessing.cpu_count()
 print(f"Number of threads: {num_threads}")
-print("==============================================================================================================")
 
 def show_msg(msg):
     print("="*50)
@@ -33,7 +31,9 @@ def start_spark_session(app_name="app",num_cores=2,exec_memory="1g",driver_memor
     #spark.conf.set("mapreduce.fileoutputcommitter.marksuccessfuljobs", "false") # to avoid storing success files
     return spark   
 
-# =========================STRATIFIED_SAMPLE================================================================
+# =========================SAMPLING=======================================================================
+
+# ____________________________STRATIFIED_SAMPLE______________________________________________________________
 
 def get_stratified_sample(df,group_col, sample_frac, seed=42):
     
@@ -51,6 +51,9 @@ def get_stratified_sample(df,group_col, sample_frac, seed=42):
              
           """)
     return sampled_df 
+
+
+# =========================SAVE_UTILS=======================================================================
 
 # _________________________PARQUET FILES____________________________________________________________________
 
