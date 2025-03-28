@@ -33,7 +33,27 @@ def start_spark_session(app_name="app",num_cores=2,exec_memory="1g",driver_memor
     #spark.conf.set("mapreduce.fileoutputcommitter.marksuccessfuljobs", "false") # to avoid storing success files
     return spark   
 
+# =========================STRATIFIED_SAMPLE================================================================
+
+def get_stratified_sample(df,group_col, sample_frac, seed=42):
+    
+    unique_labels = df.select(group_col).distinct().rdd.map(lambda row: row[group_col]).collect()
+    fractions = {label: sample_frac for label in unique_labels}
+    sampled_df = df.sampleBy(group_col, fractions, seed=seed)
+    print("""
+          Note:
+          1. No. of records depends on seed. Different seed results in different number of records.
+          2. sample_frac - probability of record being selected. sample_frac * no. records = no. records considered.
+             0.3*5 = 1.5 records ~ 1 record
+          3. Category A - 5 records, Category B - 2 record. Cateogry A might get excluded but Cateogry B might be included, given random nature and probable selection. 
+             Category A - 0.3*5=round(1.5)=1 (randomly rejected)
+             Category B - 0.3*2=round(0.6)=1 (randomly selected)
+             
+          """)
+    return sampled_df 
+
 # _________________________PARQUET FILES____________________________________________________________________
+
 def save_as_parquet(df, output_path, max_records_per_file=5000):
     show_msg(f"Saving DataFrame as Parquet files with maxRecordsPerFile = {max_records_per_file}")
     df.write.option("maxRecordsPerFile", max_records_per_file).mode("overwrite").parquet(output_path)
