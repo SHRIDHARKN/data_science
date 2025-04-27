@@ -102,11 +102,9 @@ model.config.pad_token_id = model.config.eos_token_id  # ✅ Safe for autoregres
 ```
 # Train the model
 ```
-#from torch.cuda.amp import GradScaler, autocast  # for mixed precision training (optional)
 from torch.amp import GradScaler, autocast
 
 scaler = GradScaler("cuda")
-#scaler = GradScaler()  # for mixed precision, optional
 optimizer = optim.Adam(model.parameters(), lr=0.0001)
 model.train()
 
@@ -117,7 +115,6 @@ for epoch in range(num_epochs):
     train_loss = 0
     loop = tqdm(dataloader,leave=True)
     for batch in loop:
-    #for batch in dataloader:
         prompt, true_labels = batch
         inputs = tokenizer(prompt, return_tensors="pt", padding="max_length", 
                    truncation=True, max_length=model_context_length).to(model.device)
@@ -125,6 +122,12 @@ for epoch in range(num_epochs):
         input_ids = inputs["input_ids"].to(model.device)
         attention_mask = inputs["attention_mask"].to(model.device)
         labels = input_ids.clone().to(model.device)
+
+        for i in range(len(prompt)):
+            answer_start = prompt[i].find('{"Answer":')
+            prompt_part = tokenizer(prompt[i][:answer_start], add_special_tokens=False)
+            prompt_token_length = len(prompt_part["input_ids"])
+            labels[i, :prompt_token_length] = -100
 
         optimizer.zero_grad()
 
@@ -144,4 +147,46 @@ for epoch in range(num_epochs):
         
     avg_train_loss = train_loss/num_steps
     print(f"Epoch {epoch+1}: Loss = {loss.item()} : Avg Train Loss : {avg_train_loss}")
+```
+# Method 2
+```
+optimizer = optim.Adam(model.parameters(), lr=0.0001)
+model.train()
+num_epochs = 1
+for epoch in range(num_epochs):
+    epoch_loss = 0
+    num_steps = 0
+    loop = tqdm(dataloader,leave=True)
+    for batch in loop:
+        prompt, true_labels = batch
+        inputs = tokenizer(prompt, return_tensors="pt", padding="max_length", 
+                   truncation=True, max_length=model_context_length).to(model.device)
+        
+        input_ids = inputs["input_ids"].to(model.device)
+        attention_mask = inputs["attention_mask"].to(model.device)
+        labels = input_ids.clone().to(model.device)
+
+        for i in range(len(prompt)):
+            answer_start = prompt[i].find('{"Answer":')
+            prompt_part = tokenizer(prompt[i][:answer_start], add_special_tokens=False)
+            prompt_token_length = len(prompt_part["input_ids"])
+            labels[i, :prompt_token_length] = -100
+
+        optimizer.zero_grad()
+
+        outputs = model(
+            input_ids=input_ids,
+            attention_mask=attention_mask,
+            labels=labels
+        )
+        loss = outputs.loss
+
+        loss.backward()
+        optimizer.step()
+        epoch_loss+=loss.item()
+        num_steps+=1
+
+    avg_epoch_loss = epoch_loss/num_steps
+    
+    print(f"Epoch {epoch+1}: Loss = {avg_epoch_loss}")
 ```
