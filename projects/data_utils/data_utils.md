@@ -34,7 +34,7 @@ class CSVDataset(Dataset):
 ```
 ### Example code
 ```python
-root_directory = '/mnt/d/data/product_clf/dataloader'
+root_directory = '<path to folder containing csv files>'
 csv_dataset = CSVDataset(root_dir=root_directory)
 print(f"Total number of samples: {len(csv_dataset)}")
 dataloader = DataLoader(csv_dataset, batch_size=32, shuffle=True)
