@@ -32,12 +32,52 @@ class CSVDataset(Dataset):
         sample = df.iloc[row_idx].to_dict()  # Get the row as a dictionary
         return sample
 ```
-### Example code
+#### Example code
 ```python
 root_directory = '<path to folder containing csv files>'
 csv_dataset = CSVDataset(root_dir=root_directory)
 print(f"Total number of samples: {len(csv_dataset)}")
 dataloader = DataLoader(csv_dataset, batch_size=32, shuffle=True)
+for batch in dataloader:
+    break  # Just to show the first batch
+```
+# Load pandas parquet file in batches
+```python
+class ParquetDataset(Dataset):
+    def __init__(self, root_dir):
+        
+        self.root_dir = root_dir
+        self.parquet_files = [f for f in os.listdir(root_dir) if f.endswith('.parquet')]
+        self.all_data = []
+        self._load_metadata()
+        self.num_files = len(self.parquet_files)
+        print(f"Found {self.num_files} parquet files in {root_dir}")
+
+    def _load_metadata(self):
+        
+        for file_idx, filename in enumerate(self.parquet_files):
+            filepath = os.path.join(self.root_dir, filename)
+            df = pd.read_parquet(filepath)
+            for row_idx in range(len(df)):
+                self.all_data.append((file_idx, row_idx))
+                
+    def __len__(self):
+        return len(self.all_data)
+
+    def __getitem__(self, idx):
+        file_idx, row_idx = self.all_data[idx]
+        filename = self.parquet_files[file_idx]
+        filepath = os.path.join(self.root_dir, filename)
+        df = pd.read_parquet(filepath)
+        sample = df.iloc[row_idx].to_dict()  # Get the row as a dictionary
+        return sample
+```
+#### Example code 
+```python
+root_directory = '<folder containing parquet files>'
+parquet_dataset = ParquetDataset(root_dir=root_directory)
+print(f"Total number of samples: {len(parquet_dataset)}")
+dataloader = DataLoader(parquet_dataset, batch_size=32, shuffle=True)
 for batch in dataloader:
     break  # Just to show the first batch
 ```
