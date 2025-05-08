@@ -1,4 +1,4 @@
-```
+```python
 import pandas as pd
 import gc
 import torch
@@ -21,7 +21,7 @@ gc.collect()
 torch.cuda.empty_cache()
 ```
 # Model and tokenizer context length
-```
+```python
 model_name = "microsoft/phi-3-mini-4k-instruct"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 tokenizer.pad_token = tokenizer.eos_token
@@ -29,7 +29,7 @@ model_context_length = 1024
 model_context_length = tokenizer.model_max_length if model_context_length is None else model_context_length
 ```
 # Get max tokens required for answer
-```
+```python
 def get_num_tokens(text, tokenizer):
     tokens = tokenizer.tokenize(text)
     return len(tokens)
@@ -43,7 +43,7 @@ print(f"passage_context_length:{passage_context_length}")
 print(f"passage_context_length+answer_context_length:{passage_context_length+answer_context_length}")
 ```
 # QA template
-```
+```python
 def make_qa_prompt(question,passage,answer,passage_context_length):
 
     passage_len = len(passage)
@@ -63,7 +63,7 @@ def make_qa_prompt(question,passage,answer,passage_context_length):
     return prompt
 ```
 # Model load
-```
+```python
 bnb_config = BitsAndBytesConfig(
         load_in_4bit=True,
         bnb_4bit_use_double_quant=True,
