@@ -10,18 +10,18 @@ def log_msg(msg, msg_typ="normal", font_color="white", bg_color="red", header=""
     msg = " \u039B | " +" "*2+ msg +" "*10
     
     if msg_typ == "normal":
-        print(colored("=" * 10 + " INFO " + "=" * 10, 'black', 'on_white', attrs=['bold'])) 
+        print(colored("_" * 10 + " INFO " + "_" * 10, 'black', 'on_white', attrs=['bold'])) 
         print(colored(msg, 'black', 'on_white', attrs=['bold']))   
     elif msg_typ == "data":
-        print(colored("=" * 10 + " DATA/ VARS / CONFIG " + "=" * 10, 'black', 'on_white', attrs=['bold'])) 
+        print(colored("_" * 10 + " DATA/ VARS / CONFIG " + "_" * 10, 'black', 'on_white', attrs=['bold'])) 
         print(colored(msg, 'white', 'on_blue', attrs=['bold']))
     elif msg_typ == "progress":
-        print(colored("=" * 10 + " PROGRESS/ SAVES " + "=" * 10, 'black', 'on_white', attrs=['bold'])) 
+        print(colored("_" * 10 + " PROGRESS/ SAVES " + "_" * 10, 'black', 'on_white', attrs=['bold'])) 
         print(colored(msg, 'white', 'on_green', attrs=['bold']))
     else:
-        print(colored("=" * 10 + header + "=" * 10, 'black', 'on_white', attrs=['bold'])) 
+        print(colored("_" * 10 + header + "_" * 10, 'black', 'on_white', attrs=['bold'])) 
         print(colored(msg, font_color, f'on_{bg_color}', attrs=['bold']))
-    print(colored("=" * 50+"\n", 'black', 'on_white', attrs=['bold'])) 
+    print(colored("_" * 50+"\n", 'black', 'on_white', attrs=['bold'])) 
 
 # === LOAD DATA ===
 class CSVDataset(Dataset):
