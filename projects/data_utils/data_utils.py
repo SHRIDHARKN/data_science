@@ -5,23 +5,24 @@ import os
 from termcolor import colored
 
 # === LOG ===
-def log_msg(msg, msg_typ="normal", font_color="white", bg_color="red", header=""):
+def log_msg(msg, msg_typ="normal", font_color="white", bg_color="red", header="", sep = "="):
     
     msg = " \u039B | " +" "*2+ msg +" "*10
     
     if msg_typ == "normal":
-        print(colored("_" * 10 + " INFO " + "_" * 10, 'black', 'on_white', attrs=['bold'])) 
+        print(colored(sep * 10 + " INFO " + sep * 10, 'black', 'on_white', attrs=['bold'])) 
         print(colored(msg, 'black', 'on_white', attrs=['bold']))   
     elif msg_typ == "data":
-        print(colored("_" * 10 + " DATA/ VARS / CONFIG " + "_" * 10, 'black', 'on_white', attrs=['bold'])) 
+        print(colored(sep * 10 + " DATA/ VARS / CONFIG " + sep * 10, 'black', 'on_white', attrs=['bold'])) 
         print(colored(msg, 'white', 'on_blue', attrs=['bold']))
     elif msg_typ == "progress":
-        print(colored("_" * 10 + " PROGRESS/ SAVES " + "_" * 10, 'black', 'on_white', attrs=['bold'])) 
+        print(colored(sep * 10 + " PROGRESS/ SAVES " + sep * 10, 'black', 'on_white', attrs=['bold'])) 
         print(colored(msg, 'white', 'on_green', attrs=['bold']))
     else:
-        print(colored("_" * 10 + header + "_" * 10, 'black', 'on_white', attrs=['bold'])) 
+        print(colored(sep * 10 + header + sep * 10, 'black', 'on_white', attrs=['bold'])) 
         print(colored(msg, font_color, f'on_{bg_color}', attrs=['bold']))
-    print(colored("_" * 50+"\n", 'black', 'on_white', attrs=['bold'])) 
+    print(colored(sep * 50+"\n", 'black', 'on_white', attrs=['bold'])) 
+
 
 # === LOAD DATA ===
 class CSVDataset(Dataset):
