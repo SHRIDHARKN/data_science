@@ -1,12 +1,12 @@
 # data_science
 ## deep-learning
-- **BERT finetune on multiclass**<br> - [script] (https://github.com/SHRIDHARKN/data_science/blob/main/projects/deep_learning/bert_finetune_multiclass/bert_train.py)
-- **RoBERTa finetune on multiclass**<br> - [script] ()
-**1. U-Net - image background removal using human segmentation - [link](https://github.com/SHRIDHARKN/data_science/blob/fe16b14432744f15d7513319a3697565f0cacdfb/deep_learning/image_segmentation/human_segmentation/human_segmentation.ipynb)**<br>
+- **BERT finetune on multiclass - [script] (https://github.com/SHRIDHARKN/data_science/blob/main/projects/deep_learning/bert_finetune_multiclass/bert_train.py)**<br>
+- **RoBERTa finetune on multiclass - [script] (https://github.com/SHRIDHARKN/data_science/blob/main/projects/deep_learning/roberta_finetune_multiclass/roberta_train.py)**<br>
+- **U-Net - image background removal using human segmentation - [link](https://github.com/SHRIDHARKN/data_science/blob/fe16b14432744f15d7513319a3697565f0cacdfb/deep_learning/image_segmentation/human_segmentation/human_segmentation.ipynb)**<br>
 ![ezgif com-resize](https://github.com/SHRIDHARKN/data_science/assets/74343939/69a27345-ecce-41a7-94e1-67251489a542)
 
-**2. image denoising using autoencoder - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/image_denoising_autoencoder/image_denoising.ipynb)**<br>
-**3. image-search-engine**<br>
+** Image denoising using autoencoder - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/image_denoising_autoencoder/image_denoising.ipynb)**<br>
+** Image-search-engine**<br>
        - **fashion_image_search - [link](https://github.com/SHRIDHARKN/data_science/blob/main/deep_learning/image_search_engine)**<br>       
 
 ## nlp
