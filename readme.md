@@ -26,6 +26,8 @@
 - text to sql - google-palm langchain-chromadb-few-shot-learn - **[link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/text2llm_fewshotlearn.ipynb)**
 - llama 2 7b finetune (mental health counseling chatbot) **[link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/llama_mental_health.ipynb)**
 - llm-quantisation **[link](https://github.com/SHRIDHARKN/data_science/blob/main/nlp/llm/quantization-memory-footprint.ipynb)**
+- T5-Base-Finetune-QA **[link](https://github.com/SHRIDHARKN/data_science/blob/main/projects/generative-ai/t5_base_finetune_qa_multiclass/t5_base_train.py)**
+- T5-Small-Finetune-QA **[link](https://github.com/SHRIDHARKN/data_science/blob/main/projects/generative-ai/t5_small_finetune_qa_multiclass/t5_small_train.py)**
      
 
 ### Diffusions models
