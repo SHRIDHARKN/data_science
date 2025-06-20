@@ -2,7 +2,7 @@
 ## deep-learning
 - **BERT finetune on multiclass - [link](https://github.com/SHRIDHARKN/data_science/blob/main/projects/deep_learning/bert_finetune_multiclass/bert_train.py)**<br>
 - **RoBERTa finetune on multiclass - [link](https://github.com/SHRIDHARKN/data_science/blob/main/projects/deep_learning/roberta_finetune_multiclass/roberta_train.py)**<br>
-- **BERT LORA Finetune on multiclass - [link](https://github.com/SHRIDHARKN/data_science/blob/main/projects/deep_learning/roberta_finetune_lora_multiclass/roberta_lora_train.py)**<br>
+- **BERT LORA finetune on multiclass - [link](https://github.com/SHRIDHARKN/data_science/blob/main/projects/deep_learning/roberta_finetune_lora_multiclass/roberta_lora_train.py)**<br>
 - **U-Net - image background removal using human segmentation - [link](https://github.com/SHRIDHARKN/data_science/blob/fe16b14432744f15d7513319a3697565f0cacdfb/deep_learning/image_segmentation/human_segmentation/human_segmentation.ipynb)**<br>
 ![ezgif com-resize](https://github.com/SHRIDHARKN/data_science/assets/74343939/69a27345-ecce-41a7-94e1-67251489a542)
 
