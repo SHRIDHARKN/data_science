@@ -232,3 +232,26 @@ class CSVDataset(Dataset):
         df = pd.read_csv(filepath, header=0)
         sample = df.iloc[row_idx].to_dict()  # Get the row as a dictionary
         return sample
+
+
+class ParquetDataset(Dataset):
+    def __init__(self, file_path):
+        """
+        Dataset for a single parquet file.
+        
+        Args:
+            file_path (str): Path to the parquet file
+        """
+        if not os.path.isfile(file_path):
+            raise FileNotFoundError(f"File not found: {file_path}")
+        
+        self.file_path = file_path
+        self.df = pd.read_parquet(file_path)  # Load only one file
+        print(f"Loaded parquet file: {file_path} with {len(self.df)} rows")
+
+    def __len__(self):
+        return len(self.df)
+
+    def __getitem__(self, idx):
+        sample = self.df.iloc[idx].to_dict()
+        return sample
