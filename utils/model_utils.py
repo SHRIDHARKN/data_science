@@ -43,17 +43,27 @@ def save_llm_checkpoint(is_peft_model,epoch, checkpoint_dir, avg_epoch_loss,
                     weight_decay=None, batch_size=None, num_epochs=None,
                     gradient_accumulation_steps=None,
                     model_context_length=None,label_context_length=None,
-                    checkpoint_save_epochs=1):
+                    checkpoint_save_epochs=1, add_tag=False):
     
     if (epoch + 1) % checkpoint_save_epochs == 0:
-        os.makedirs(os.path.join(checkpoint_dir,f"checkpoint_epoch_{epoch+1}"), exist_ok=True)
-        checkpoint_path = os.path.join(checkpoint_dir, f"checkpoint_epoch_{epoch+1}/checkpoint.pt")
+        if add_tag is True:
+            os.makedirs(os.path.join(checkpoint_dir,f"checkpoint_epoch_{epoch+1}"), exist_ok=True)
+            checkpoint_path = os.path.join(checkpoint_dir, f"checkpoint_epoch_{epoch+1}/checkpoint.pt")
+        else:
+            os.makedirs(os.path.join(checkpoint_dir,f"checkpoint"), exist_ok=True)
+            checkpoint_path = os.path.join(checkpoint_dir, f"checkpoint/checkpoint.pt")
+    
         # Save both model state_dict and optimizer/scheduler states for full resume capability
         if is_peft_model:
-            os.makedirs(os.path.join(checkpoint_dir,f"adapter_epoch_{epoch+1}"), exist_ok=True)
+            if add_tag is True:
+                os.makedirs(os.path.join(checkpoint_dir,f"adapter_epoch_{epoch+1}"), exist_ok=True)
+                adapter_path = os.path.join(checkpoint_dir, f"adapter_epoch_{epoch+1}")
+            else:
+                os.makedirs(os.path.join(checkpoint_dir,f"adapter"), exist_ok=True)
+                adapter_path = os.path.join(checkpoint_dir, "adapter")
+            
             print("__________________________________________________________________")
             print("PEFT model detected. Saving adapter only.")
-            adapter_path = os.path.join(checkpoint_dir, f"adapter_epoch_{epoch+1}")
             model.save_pretrained(save_directory=adapter_path)
             print(f"Adapter saved @ {adapter_path}")
             print("__________________________________________________________________")
