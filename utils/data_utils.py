@@ -235,23 +235,35 @@ class CSVDataset(Dataset):
 
 
 class ParquetDataset(Dataset):
-    def __init__(self, file_path):
-        """
-        Dataset for a single parquet file.
-        
-        Args:
-            file_path (str): Path to the parquet file
-        """
-        if not os.path.isfile(file_path):
-            raise FileNotFoundError(f"File not found: {file_path}")
-        
-        self.file_path = file_path
-        self.df = pd.read_parquet(file_path)  # Load only one file
-        print(f"Loaded parquet file: {file_path} with {len(self.df)} rows")
+    def __init__(self, root_dir, max_samples=None):
+        self.root_dir = root_dir
+        self.parquet_files = [f for f in os.listdir(root_dir) if f.endswith('.parquet')]
+        self.all_data = []
+        self.max_samples = max_samples  # limit for debugging
+        self._load_metadata()
+        self.num_files = len(self.parquet_files)
+        print(f"Found {self.num_files} parquet files in {root_dir}")
+        if max_samples is not None:
+            print(f"Limiting dataset to {max_samples} samples for debugging.")
+
+    def _load_metadata(self):
+        for file_idx, filename in enumerate(self.parquet_files):
+            filepath = os.path.join(self.root_dir, filename)
+            df = pd.read_parquet(filepath)
+            for row_idx in range(len(df)):
+                self.all_data.append((file_idx, row_idx))
+                if self.max_samples is not None and len(self.all_data) >= self.max_samples:
+                    return  # stop loading further
 
     def __len__(self):
-        return len(self.df)
+        if self.max_samples is not None:
+            return min(len(self.all_data), self.max_samples)
+        return len(self.all_data)
 
     def __getitem__(self, idx):
-        sample = self.df.iloc[idx].to_dict()
+        file_idx, row_idx = self.all_data[idx]
+        filename = self.parquet_files[file_idx]
+        filepath = os.path.join(self.root_dir, filename)
+        df = pd.read_parquet(filepath)
+        sample = df.iloc[row_idx].to_dict()
         return sample
