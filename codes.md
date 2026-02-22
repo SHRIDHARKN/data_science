@@ -1,5 +1,9 @@
 ![image](https://github.com/SHRIDHARKN/data_science/assets/74343939/77bbf6e5-dd40-4a1a-8c8d-86f45b5bd820)
 # Codes 
+export PROMPT_DIRTRIM=2
+export PS1="\[\e[38;5;232;48;5;51m\] TERMINAL \[\e[0;38;5;51;48;5;226m\]\[\e[38;5;232;48;5;226m\] \w \[\e[0;38;5;226m\] \[\e[m\] "
+
+
 | Topic | Link |
 |----------|----------|
 | make changes to repo    | [link](https://github.com/SHRIDHARKN/data_science/blob/main/codes.md#make-changes-to-repo)    |
